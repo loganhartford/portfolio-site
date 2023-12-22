@@ -1,0 +1,30 @@
+
+Higher Priority
+- Do DNS thing to get custom domain working
+    - Waiting for DNS propegation
+- Add project content
+- Change blog to notes
+- Add a single notes page
+
+
+Lower Priority:
+- Add more notes pages
+    - Book Summaries
+    - EE study guides
+    - Notes from Tesla
+    - Look through samsung notes
+- Custsomize homepage
+    - Add a project/notes spotlight below image
+    - Add some more content to image
+- Custsomize style
+    - Change background color
+    - Change hover underline color
+    - Change muted text cover (homepage)
+
+Trying to break up the project section:
+
+What I've learned
+- The collections section in config generates the html for the project pages but I haven't found what generates project/index.html
+- to be able to break up the projects, I need to generate my own other_projects/index.html so I can indlude it where I want
+- Could also try fully duplicating what is being done for the projects seciton and have a seperate page for the other projects
+- This is low priority so for now I will just get all the project content into the website and I can move it around later
