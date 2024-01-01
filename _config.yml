@@ -5,7 +5,7 @@ description         : >-
 baseurl             : ""                     # Change to empty quotes if you are hosting your site at <your-username>.github.io directly
 url                 : "https://lhartford.com"
 repository          : loganhartford/portfolio-site    # Change to <your-username>/<your-username>.github.io (or remove it if you don't need remote projects)
-remote_theme        : YoussefRaafatNasry/portfolYOU
+remote_theme        : loganhartford/portfolYOU
 open_new_tab        : true                             # Opens external URLs in new tab (works for posts, projects and navbar only)
 
 
@@ -25,7 +25,7 @@ nav_exclude:                                            # The following paths ar
 ### Author Info ###
 author:
   name              : Logan Hartford
-  image             : img/Headshot.jpg
+  image             : https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704133992/portfolio-site/ah2refudliqz7iuiabko.png
   # behance           : your_username
 # dribbble          : your_username
   email             : lapharf@uwaterloo.ca
@@ -68,16 +68,6 @@ analytics:
   enabled: false                                        # Set true to enable analytics
   google:
     tracking_id: your-google-tracking-id
-
-
-### Buy me a coffee ###
-# See https://www.buymeacoffee.com/
-buymeacoffee:
-  enabled: false
-  username: your_username
-  color: "#007bff"
-  message: "Thank you for visiting."                    # Message to be displayed aside from the button for a few seconds.
-  description: "Support me on Buy me a coffee!"
 
 
 ### Defaults for collections ###
