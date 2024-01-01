@@ -50,19 +50,53 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704145903/portfolio-site/pcb
 ## Code
 The firmware for this project works but it is extremely inefficient and has some bugs in it. I wrote this code in a furry and did not have time to think about the best way to write the code and so this seemingly simple program occupies almost 1300 lines of code and all of my microcontroller's flash memory.
 
-{% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/tree/main/Multi-Disciplinary/A%20PCB%20Christmas/Firmware/Test.X" text="GitHub" style="primary" size="lg" %}
-
 ##### Playing Songs
 * The pitch of the buzzer is determined by the frequency of the PWM signal being sent to the gate of the MOSFET. 
 * The PWM frequency can be controlled by changing the Prescaler and period of TMR2.
   * The Prescaler is essentially how fast this timer runs relative to the system clock, and the period is the number cycles before the timer rolls over and changes the state of the PWM signal.
 * Each Prescaler value is only suitable to produce a particular octave range of notes.
-* The BPM of the music is determined by the TMR1 interrupt service routine which sets the state of the buzzer and LED matrix.
 
+```c++
+void TMR1_ISR_(void)
+{
+    count++;    // Increment beat counter
+    
+    // Update the silent night LED matrix.
+    if (silent_night_playing) {
+        if (count < 24 || ((count > 48) && (count < 96))) {
+            if (last_note != silent_night[count]) {
+                for (int i = 0; i < 7; i++)
+                {
+                    uint8_t lights = light_array[i] >> 7;
+                    light_array[i] = (light_array[i] << 1) + lights;
+                }  
+            }
+        }
+        else if (count > 119 && (last_note != silent_night[count])) {
+            for (int i = 0; i < 7; i++)
+            {
+                light_array[i] = (light_array[i] << 1) + 1;
+            }
+        }
+        else if (count < 120) {
+            for (int i = 0; i < 7; i++)
+            {
+                uint8_t lights = light_array[i] >> 7;
+                light_array[i] = (light_array[i] << 1) + lights;
+            }
+        }    
+    }
+    // ...
+}
+```
+
+* The BPM of the music is determined by the TMR1 interrupt service routine which sets the state of the buzzer and LED matrix.
 
 ##### Other Notes
 * I used the SPI peripheral as an easy way to clock bits into the shift registers.
 * The momentary switch is connected to an external interrupt which can wake the device from sleep or disrupt a song sequence.
+
+{% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/tree/main/Multi-Disciplinary/A%20PCB%20Christmas/Firmware/Test.X" text="GitHub" style="primary" size="lg" %}
 
 ## Mechanical Design
 The designs on the stand were created by importing pictures into the sketches, carefully outlining the pictures with splines, and then cutting them out as thin features. The stand friction fits onto the bottom of the PCB and allows the PCB to stand upright. 

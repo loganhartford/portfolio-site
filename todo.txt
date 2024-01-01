@@ -19,3 +19,5 @@ Lower Priority:
     - Change background color
     - Change hover underline color
     - Change muted text cover (homepage)
+- Customize layout
+    - have text and images side by side
