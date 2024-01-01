@@ -1,6 +1,7 @@
 
 Higher Priority
 - Add project content
+- Add video to pcb christmas
 - Change blog to notes
 - Add a single notes page
 

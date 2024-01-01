@@ -4,6 +4,7 @@ tools: [SolidWorks, Altium, C++, Arduino]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704143330/portfolio-site/beer-can-counter/pvsrgaxqygqwdru5inue.jpg
 description: A device designed to count crushed beer cans.
 category: "Full Scope"
+slug: beer-can-counter
 ---
 
 # Beer Can Counter

@@ -55,8 +55,8 @@ permalink: /blog/:title
 collections:
   projects:
     output: true
-    permalink: /projects/:name # For Documentation Only
-    output: true 
+    permalink: /projects/:slug
+    output: true
 
 ### Disqus ###
 disqus:
