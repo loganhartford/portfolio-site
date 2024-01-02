@@ -3,7 +3,6 @@ name: Dopamine Box
 tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704210592/portfolio-site/dopamine-box/yh5e4exbz4msunf995nl.png
 description: Made a satisfying daily to-do list for my key habits.
-category: "Full Scope"
 slug: dopamine-box
 ---
 

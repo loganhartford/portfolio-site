@@ -3,7 +3,6 @@ name: Smart Greenhouse
 tools: [IOT, Blynk, Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704148382/portfolio-site/smart-greenhouse/isqt0aitcngbdh7j5u1q.jpg
 description: An IOT greenhouse designed to maintain a stable temperature and humidity.
-category: "Full Scope"
 slug: smart-greenhouse
 ---
 

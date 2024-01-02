@@ -3,7 +3,6 @@ name: IOT Mechanical Kill Switch
 tools: [IOT, Blynk, Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704208550/portfolio-site/kill-switch/lf0b0mnbkbuezgpgg7nv.jpg
 description: Made a kill switch to turn my 3D printer off from my phone.
-category: "Full Scope"
 slug: kill-switch
 ---
 

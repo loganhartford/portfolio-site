@@ -3,7 +3,6 @@ name: Hand Held Tic-Tac-Toe
 tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704151028/portfolio-site/tic-tac-toe/ynk60hnefsxnzyidflem.jpg
 description: A handheld PvP Tic-Tac-Toe console.
-category: "Full Scope"
 slug: tic-tac-toe
 ---
 

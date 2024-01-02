@@ -3,7 +3,6 @@ name: RC Airsoft Turret
 tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704152672/portfolio-site/airsoft-turret/lbfyqdvdbjqlkrwgrhcx.png
 description: A custom remote controlled airsoft turret.
-category: "Full Scope"
 slug: rc-airsoft-turret
 ---
 

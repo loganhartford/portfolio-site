@@ -3,7 +3,6 @@ name: Color Shifting Chameleon
 tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704162208/portfolio-site/chameleon/jnywohirjnsbdsu7df8k.png
 description: A light up chameleon that can change color on command.
-category: "Full Scope"
 slug: color-shifting-chameleon
 ---
 

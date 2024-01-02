@@ -3,7 +3,6 @@ name: Clapper Lamp
 tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704164303/portfolio-site/clapper-lamp/pphuxhwyxdmoq3ivbb71.png
 description: Made my reading lamp clap controlled.
-category: "Full Scope"
 slug: clapper-lamp
 ---
 
