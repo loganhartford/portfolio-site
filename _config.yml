@@ -53,7 +53,19 @@ permalink: /blog/:title
 
 ### Collections ###
 collections:
-  projects:
+  mechatronicsprojects:
+    output: true
+    permalink: /projects/:slug
+    output: true
+  hardwareprojects:
+    output: true
+    permalink: /projects/:slug
+    output: true
+  mechanicalprojects:
+    output: true
+    permalink: /projects/:slug
+    output: true
+  otherprojects:
     output: true
     permalink: /projects/:slug
     output: true
@@ -74,7 +86,22 @@ analytics:
 defaults:
   - scope:
       path: ""
-      type: "projects"
+      type: "mechatronicsprojects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "mechanicalprojects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "hardwareprojects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "otherprojects"
     values:
       layout: "page"
   - scope:                                              # For Documentation Only

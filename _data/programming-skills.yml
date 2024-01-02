@@ -1,11 +1,19 @@
-- name: HTML5/CSS3
-  percentage: 90
-  color: danger
-
-- name: Go
-  percentage: 80
-  color:
-
 - name: Python
+  percentage: 80
+  color: info
+
+- name: Arduino
+  percentage: 90
+  color: info
+
+- name: JavaScript
   percentage: 70
-  color: secondary
+  color: info
+
+- name: C/C++
+  percentage: 60
+  color: info
+
+- name: Embedded Dev.
+  percentage: 60
+  color: info

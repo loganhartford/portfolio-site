@@ -1,0 +1,19 @@
+- name: Altium
+  percentage: 80
+  color: secondary
+
+- name: Power Conversion
+  percentage: 70
+  color: secondary
+
+- name: High-Speed Routing
+  percentage: 60
+  color: secondary
+
+- name: PDN Analyzer
+  percentage: 40
+  color: secondary
+
+- name: SaturnPCB
+  percentage: 90
+  color: secondary

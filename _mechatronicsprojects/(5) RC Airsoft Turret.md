@@ -50,7 +50,7 @@ Lastly, the Arduino on the gun is wired to a HS-422 servo which controls the til
 ## Code
 The code for this project was the easiest part. The most difficult part about it was finding a good library and tutorial to use with the NRF24l01 modules. 
 
-The code on the left is from the Nano mounted on the gun which controls the servos. Here you can see how easy it is with this library to read data from the remote and then use it as you normally would.
+The code below is from the Nano mounted on the gun which controls the servos. Here you can see how easy it is with this library to read data from the remote and then use it as you normally would.
 
 ```c++
 void loop() {

@@ -1,0 +1,19 @@
+- name: SolidWorks
+  percentage: 80
+  color: danger
+
+- name: MatLab
+  percentage: 50
+  color: danger
+
+- name: Simulink
+  percentage: 40
+  color: danger
+
+- name: Weldments
+  percentage: 30
+  color: danger
+
+- name: 3D Printing
+  percentage: 90
+  color: danger

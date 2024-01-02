@@ -8,11 +8,12 @@ weight: 3
 # **About Me**
 
 Hi I am **{{ site.author.name }}** :wave:,<br>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+I am a 3rd year mechanical engineering student at the University of Waterloo. While I study mechanical engineering, my curiousity leads me into all engineering fields. I thrive at the intersection of engineering diciplines which is probably why I love robotics so much! I've been a part of the University of Waterloo Robotics team since 2021 and I have been a leader on the team in one form or another since early 2022.
 
 <div class="row">
-{% include about/skills.html title="Programming Skills" source=site.data.programming-skills %}
-{% include about/skills.html title="Other Skills" source=site.data.other-skills %}
+{% include about/skills.html title="Programming" source=site.data.programming-skills %}
+{% include about/skills.html title="Electrical" source=site.data.electrical-skills %}
+{% include about/skills.html title="Mechanical" source=site.data.mechanical-skills %}
 </div>
 
 <div class="row">

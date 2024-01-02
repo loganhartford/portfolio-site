@@ -1,10 +1,12 @@
 
 Higher Priority
-- Add project content
+- Add essential project content
 - Add video to pcb christmas
+- Fix carousel image heights
 - Change blog to notes
 - Add a single notes page
-
+- Add PDB content
+- Add remaining project content
 
 Lower Priority:
 - Add more notes pages

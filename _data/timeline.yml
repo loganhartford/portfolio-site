@@ -1,17 +1,54 @@
-- title: Student, Harvard CS
-  from: 2014
-  to: 2018
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Robotic Electrical System Integrations, Tesla Bot | Tesla Inc.
+  from: September 2023
+  to: December 2023
+  description: 
+    - "Led electrical system integration for AI-driven data collection platforms, developing test protocols to assess operational efficacy and designing harnesses with verified CAN-FD signal integrity."
+    - "Devised a modular repair guide, a comprehensive repair process and a training procedure for technicians for a new generation of robotic hands to boost repair yield from 50% to 95%."
+    - "Reduced triage time during repairs by 75% by implementing software-driven start and end-of-repair checks for robotic hands, employing a Python backend and HTML/JS/CSS frontend for UI efficiency."
 
-- title: Software Engineer, Google, UK
-  from: 2018
-  to: present
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-               nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-               reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+- title: Cell Manufacturing Engineering, Can Stamping | Tesla, Inc
+  from: January 2023
+  to: April 2023
+  description: 
+    - "Modeled and fabricated a bracket assembly to accurately position trigger sensors and a reject actuator relative to a CV camera on a high-volume production line, resulting in a 15% improvement in system reliability."
+    - "Developed 3D-printed fixtures for quality control, optimizing tool orientation and increasing part throughput, resulting in a 90% reduction in tooling time and an 85% reduction in part measurement time."
+    - "Created two end-to-end Python applications to automate data collection and aggregation for an equipment troubleshooting guide, a project aimed at reducing equipment downtime."
+
+- title: Robotic Hardware Design & Firmware | EMR Laboratories Inc.
+  from: May 2022
+  to: December 2022
+  description: 
+    - "Consolidated the electrical footprint of a sewer inspection robot by 60% by integrating a custom Nvidia Jetson baseboard, motor controller, and fiber-to-ethernet converter into a single main-board"
+    - "Continuously refined the main-board and simultaneously developed the firmware to produce the final version of the board (qty. 400), consisting of an 8-layer, dual-sided PCB with MIPI, USB2.0, and Ethernet routing."
+    - "Designed a custom 4S Li-Ion battery management system (BMS) board with firmware and a prototype charger that enhances the user-friendliness of the robot by eliminating the need to remove the batteries for charging."
+
+- title: Consumer Hardware Design & Firmware | EMR Laboratories Inc.
+  from: September 2021
+  to: April 2022
+  description: 
+    - "Developed a low-cost, low-power PCB for production (qty. 1500) of a novel safety device for workers at height. The device detects and raises an alarm if a boom lift operator is not safely tied off during operation."
+    - "Built a functional elevator model to emulate real-life scenarios of the safety device, utilizing Arduinos and radio modules to transmit data to a computer for firmware development and performance evaluation."
+    - "Optimized IC configurations, implemented automatic sleep/wake functionality, and reduced code runtime from 90ms to 16ms to extend device battery life from 20 to 128 days."
+
+- title: Electrical Lead, Team Lead | University of Waterloo Robotics Team
+  from: September 2021
+  to: Present
+  description: 
+    - "Managed team direction, project coordination, and sub-team integration to ensure seamless functioning of all systems in the Mars Rover Robot in preparation for the University Rover Challenge."
+    - "Coordinated and led the electrical team, providing mentorship to novice members throughout their board design process, including assisting with design reviews and assembly and testing using appropriate equipment."
+    - "Created and validated two iterations of an 8A output, 48-24V multi-phase buck converter, utilizing high-power layout techniques to ensure adequate power and heat distribution on the board"
+
+- title: BASc Mechanical Engineering, Mechatronics Option | University of Waterloo
+  from: September 2020
+  to: Present
+  description: 
+    - "Intro to Microprocessors and Digital Logic"
+    - "Microprocessor Systems and Interfacing"
+    - "Circuits I/II"
+    - "Intro to Control Systems"
+    - "Mechanical Design I"
+    - "Mechanics of Deformable Solids I/II"
+    - "Thermodynamics I/II"
+    - "Manufacturing Processes"
+    - "Fluid Mechanics I/II" 
+    - "Heat Transfer I"
