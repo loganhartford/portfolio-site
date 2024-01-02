@@ -1,6 +1,6 @@
 ---
 name: A PCB Christmas
-tools: [Altium, MPLABX, PIC, C++, SolidWorks]
+tools: [Altium, MPLABX, PIC, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704144037/portfolio-site/pcb-christmas/bi40bju3dunia2opgfkt.jpg
 description: An electronic christmas ornament that can sing and and flash to tunes.
 category: "Full Scope"

@@ -1,6 +1,6 @@
 ---
 name: Color Shifting Chameleon
-tools: [Arduino, C++, SolidWorks]
+tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704162208/portfolio-site/chameleon/jnywohirjnsbdsu7df8k.png
 description: A light up chameleon that can change color on command.
 category: "Full Scope"
@@ -30,18 +30,15 @@ On the back of the chameleon there is a box which houses the Nano as well as the
 ## Mechanical Design
 To create the CAD for this project I simply modified a SolidWorks file that I downloaded from another user on GrabCAD.  The project is called [Charlie - Algix Chameleon Mascot](https://grabcad.com/library/charlie-algix-chameleon-mascot-1) created by Ridwan Sept.
 
-My contribution to the CAD was simply adding and a box to the back of the chameleon in order to house the electronics. Then I created a top plate which covered the box and allowed the motion sensor and RGB sensor to make reads.
+My contribution to the CAD was simply adding and a box to the back of the chameleon to house the electronics. Then I created a top plate which covered the box and allowed the motion sensor and RGB sensor to see.
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704162652/portfolio-site/chameleon/fuhjskynwqap6gni4dnw.png "Chameleon CAD")
 
 Once the model was 3D printed, a 5mm drill bit was used to make holes for the LEDs to be inserted into the model. The model was printed without infill (hollow) for the best lighting effect.
 
-Unfortunately when attempting to convert the model to an stl I accidentally converted my solidbody into a mesh body, which can be seen to the right. There doesn’t seem to be an easy way to reverse this and so  it has been left this way.
-
 {% include elements/button.html link="https://grabcad.com/library/colour-shifting-chameleon-1" text="GrabCAD" style="primary" size="lg" %}
 
 ## Code
-
 The code for this video can be broken down into two sections, the moodlight section and the RGB sensor section.
 
 So long as the motion sensor is not reading anything, the program will continuously cycle through the RGB rainbow. The program is constantly checking the motion sensor to see if anything has been place in front of it.

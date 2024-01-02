@@ -1,6 +1,6 @@
 ---
 name: Hand Held Tic-Tac-Toe
-tools: [Arduino, C++, SolidWorks]
+tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704151028/portfolio-site/tic-tac-toe/ynk60hnefsxnzyidflem.jpg
 description: A handheld PvP Tic-Tac-Toe console.
 category: "Full Scope"
@@ -19,7 +19,7 @@ The project allows two players to play head to head in a game of tic tac toe. Th
 {% include elements/video.html id="ZnFrRtN4N1A" %}
 
 ## Hardware Design
-The game is co9ntrolled by an Arduino Nano and the game board is created using 9 RGB LEDs. Player one is by blue while player two is red. The cursor for selecting the next move is magenta.
+The game is controlled by an Arduino Nano and the game board is created using 9 RGB LEDs. Player one is by blue and player two is red. The cursor for selecting the next move is magenta.
 
 To control the 18 diodes as well read the 6 buttons, the number of available outputs was increased using three 75HC595 shift registers. All of the diodes are controlled via the shift registers while the button’s statuses are read via the Arduino’s pins.  
 

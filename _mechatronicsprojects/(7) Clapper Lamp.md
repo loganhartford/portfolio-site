@@ -1,6 +1,6 @@
 ---
 name: Clapper Lamp
-tools: [Arduino, C++, SolidWorks]
+tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704164303/portfolio-site/clapper-lamp/pphuxhwyxdmoq3ivbb71.png
 description: Made my reading lamp clap controlled.
 category: "Full Scope"
@@ -93,14 +93,14 @@ void loop() {
 }
 ```
 
-In order to try and prevent yelling from being able to toggle the light, a section in the middle was added which verifies that the noise level does not exceed a small range for a short period of time between the claps.
+To try and prevent yelling from being able to toggle the light, a section in the middle was added which verifies that the noise level does not exceed a small range for a short period of time between the claps.
 
 While the design is certainly not fool proof, it works well for my needs. Occasionally it gets set off accidentally but for the most part it works as intended. To make a more significant improvement to the program I would likely need a microphone that reads pitch in addition to volume to more precisely identify claps.
 
 {% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/blob/main/Multi-Disciplinary/Clapper%20Lamp/Firmware/Clapper_Lamp.ino" text="GitHub" style="primary" size="lg" %}
 
 ## Mechanical Design
-The CAD for this project is nothing more than an enclosure for the electronics. The hole in the front is where the microphone sits. The two holes in the back allow the lamp cord and the power cord for the Arduino to exit the box.
+The CAD for this project is nothing more than an enclosure for the electronics.
 
 {% capture carousel_images %}
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704165340/portfolio-site/clapper-lamp/rgzhfyhrfjsln3qxqtke.png

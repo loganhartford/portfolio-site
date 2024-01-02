@@ -1,6 +1,6 @@
 ---
 name: RC Airsoft Turret
-tools: [Arduino, C++, SolidWorks]
+tools: [Arduino, C++, SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704152672/portfolio-site/airsoft-turret/lbfyqdvdbjqlkrwgrhcx.png
 description: A custom remote controlled airsoft turret.
 category: "Full Scope"
@@ -91,7 +91,7 @@ void loop() {
 }
 ```
 
-Once the Arduinos are able to send data to each other, the logic used to control the servos, stepper motors and LED’s isn’t any different that it would be with a wired connection. The only thing that is a little bit trickier is sometimes you can’t place logic where you’d like to. For instance, initially the code for the flashlight toggle was uploaded to the Nano mounted on the gun but due to the rate of transmission, sometimes the button status would not be sent to the gun mounted Nano properly. To solve this the toggle logic was moved to the remote.
+Once the Arduinos are able to send data to each other, the logic used to control the servos, stepper motors and LED’s isn’t any different that it would be with a wired connection.
 
 {% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/tree/main/Multi-Disciplinary/RC%20Airsoft%20Turret/Firmware" text="GitHub" style="primary" size="lg" %}
 
