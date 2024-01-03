@@ -101,6 +101,9 @@ One of the trickier parts of the coding for this project was figuring out how to
 
 {% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/blob/main/Multi-Disciplinary/Colout%20Shifting%20Chameleon/Firmware/Colour_Shifting_Chameleon/Colour_Shifting_Chameleon.ino" text="GitHub" style="primary" size="lg" %}
 
+## Concept Sketches
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704306478/portfolio-site/chameleon/uabfwujyovp434xvaqjl.jpg "Chameleon CAD")
+
 ## Reflection
 This project was very fun project but I definitely could do better if I were to make this again. 
 

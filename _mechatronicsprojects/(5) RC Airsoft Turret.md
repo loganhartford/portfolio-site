@@ -23,7 +23,7 @@ The mechanical engineering for this project was by far the most difficult portio
 The gun is able to rotate 360 degrees thanks to the system shown below. The larger part with gear teeth sits on a skateboard bearing allowing it to rotate freely. The gear below is mounted to a stepper motor which drives the system. This design was needed due to the fact that the gun and all of the parts would have been too heavy to mount directly on to the motor.
 
 {% capture carousel_images %}
-https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704161417/portfolio-site/airsoft-turret/fiy3j8ac6fgg1ae2f7xz.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/airsoft-turret/fiy3j8ac6fgg1ae2f7xz
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704161417/portfolio-site/airsoft-turret/acmxiarcobadbacxm17e.png
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704161417/portfolio-site/airsoft-turret/djgn7qhwqovf7wtbg6n9.png
 {% endcapture %}
@@ -93,6 +93,16 @@ void loop() {
 Once the Arduinos are able to send data to each other, the logic used to control the servos, stepper motors and LED’s isn’t any different that it would be with a wired connection.
 
 {% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/tree/main/Multi-Disciplinary/RC%20Airsoft%20Turret/Firmware" text="GitHub" style="primary" size="lg" %}
+
+## Concept Sketches
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/airsoft-turret/u3kmkca5rtwxxdu7xoap
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/airsoft-turret/bkgcnhsysh69ivmdftnr
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/airsoft-turret/qpndb0yc2pig2aw1volg
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/airsoft-turret/lk9lqe5sajzgz1aci4ld
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/airsoft-turret/l27g63hc6yd9x7hh2hoe
+{% endcapture %}
+{% include elements/carousel_2.html %}
 
 ## Relfection
 This project took me the longest to complete of any of my projects up to this one. As of writing this, this is my favourite and most gratifying project I’ve done. There’s something about controlling an airsoft gun remotely that is just so cool and satisfying.

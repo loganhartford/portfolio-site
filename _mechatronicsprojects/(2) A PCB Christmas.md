@@ -34,6 +34,7 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704145648/portfolio-site/pcb
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704145903/portfolio-site/pcb-christmas/wskaowmqik1oqcmgggqu.jpg
 {% endcapture %}
 {% include elements/carousel.html %}
+
 * 3x AAA batteries -> 4.5V -> 3.3V LDO
 * A 3-position toggle switch is in series with the batteries and the LDO. This allows the batteries to be completely disconnected from the device, removing power loss from leakage or quiescent current when the device is stored.
 * While the device is ON, A P-CH load switch is able to disconnect the LED matrix from the 3V3 rail in order to reduce the total amount of leakage current.
@@ -48,6 +49,14 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704145903/portfolio-site/pcb
 
 ## Code
 The firmware for this project works but it is extremely inefficient and has some bugs in it. I wrote this code in a furry and did not have time to think about the best way to write the code and so this seemingly simple program occupies almost 1300 lines of code and all of my microcontroller's flash memory.
+
+##### Architecture Notes
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308221/portfolio-site/pcb-christmas/wpyn7tkqxxvyysiymkcu.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308220/portfolio-site/pcb-christmas/ixz3r0aodbo0zwphuf83.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308220/portfolio-site/pcb-christmas/hgpuip3n3hhttxkii4le.jpg
+{% endcapture %}
+{% include elements/carousel_2.html %}
 
 ##### Playing Songs
 * The pitch of the buzzer is determined by the frequency of the PWM signal being sent to the gate of the MOSFET. 
@@ -101,6 +110,9 @@ void TMR1_ISR_(void)
 The designs on the stand were created by importing pictures into the sketches, carefully outlining the pictures with splines, and then cutting them out as thin features. The stand friction fits onto the bottom of the PCB and allows the PCB to stand upright. 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704147080/portfolio-site/pcb-christmas/hebls4ycshgbsfpnc6xj.png "Christmas tree PCB stand")
 {% include elements/button.html link="https://grabcad.com/library/christmas-tree-stands-1" text="GrabCAD" style="primary" size="lg" %}
+
+## Concept Sketches
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308381/portfolio-site/pcb-christmas/qhf1sqk6n1nko5bvbabn.jpg "christmas Tree PCB concept sketches")
 
 ## Reflection
 Overall, I would not consider this project a major success. In the end, I ended up gifting a device that had bugs and robbed me of nearly all of my free time for almost a month. This was a lesson in time management. I assumed because the idea seemed so simple, playing songs and lights on a custom PCB, that I thought I would be able to complete this project in a month without issue. I wish I had started this project in September instead of November, but we live and learn.

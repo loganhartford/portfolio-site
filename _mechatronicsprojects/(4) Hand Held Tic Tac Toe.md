@@ -22,12 +22,25 @@ The game is controlled by an Arduino Nano and the game board is created using 9 
 
 To control the 18 diodes as well read the 6 buttons, the number of available outputs was increased using three 75HC595 shift registers. All of the diodes are controlled via the shift registers while the button’s statuses are read via the Arduino’s pins.  
 
-![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704151372/portfolio-site/tic-tac-toe/gwfbowpxcl0uigxuwcp0.jpg "Tic-Tac-Toe Hardware")
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704151372/portfolio-site/tic-tac-toe/gwfbowpxcl0uigxuwcp0.jpg
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308957/portfolio-site/tic-tac-toe/mpdpunhz7gq3gnwmwcjq.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308960/portfolio-site/tic-tac-toe/modkarwevdls4lnxuzug.png
+{% endcapture %}
+{% include elements/carousel_3.html %}
 
 Each player has 3 control buttons, move left, move right and a select button. The device is powered using a rechargeable 9V battery which is mounted to the bottom game. 
 
 ## Code
 The code was written without any reference to other projects as an exercise in writing more complex programs.
+
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704309198/portfolio-site/tic-tac-toe/ezbjwl61bjtgfoiesyna.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704309198/portfolio-site/tic-tac-toe/r7jltbadlm6wxd3ovzqv.png
+{% endcapture %}
+{% include elements/carousel_2.html %}
+
+The fourth function is the select function which allows the player to make a selection. This function checks to see if the space on the board is taken, if available the move is made. 
 
 The game works by making use of 6 essential functions. The first function is the start function which is called at the start of each turn in order to reset the cursor. The next two functions are used to control the player cursor allowing the player to move left and right. 
 
@@ -67,7 +80,7 @@ The game works by making use of 6 essential functions. The first function is the
   }
 ```
 
-The fourth function is the select function which allows the player to make a selection. This function checks to see if the space on the board is taken, if available the move is made. 
+
 
 The last two functions run at the end of each turn and check to see if the a player has won the game or if the game is a tie. Creating the win checker function was by far the most difficult part of the coding. The goal was to avoid using a brute force method to check for wins. This made the final  version of the win checker more succinct but also much more difficult to create.
 

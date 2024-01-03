@@ -1,12 +1,15 @@
 
 Higher Priority
-- Add essential project content
 - Add video to pcb christmas
-- Fix carousel image heights
+- remove the gay shit
 - Change blog to notes
-- Add a single notes page
+    - Try and break into sections
+        - Books
+        - Study Notes
+        - Cheatsheets
+            - Static Websites
+- Add make it stick and learn like a pro notes
 - Add PDB content
-- Add remaining project content
 
 Lower Priority:
 - Add more notes pages

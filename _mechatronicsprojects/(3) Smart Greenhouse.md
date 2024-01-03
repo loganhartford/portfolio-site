@@ -34,6 +34,7 @@ The mechanical engineering for this project was quite straight forward. I sketch
 {% capture carousel_images %}
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704148604/portfolio-site/smart-greenhouse/fhpvlal35azl0ogspiay.jpg
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704148604/portfolio-site/smart-greenhouse/ui0ppgfs5d0zich2y40s.jpg
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307514/portfolio-site/smart-greenhouse/wunflnxwlwx51kqoy3ij.png
 {% endcapture %}
 {% include elements/carousel.html %}
 
@@ -74,6 +75,14 @@ The code for this project can essentially be broken down into two sections, cont
 Each cycle the program sends temperature, humidity and soil moisture data to be used in the Blynk app. We can add logic within the Blynk app. The squiggle and phone icon next to the soil moisture panel makes it so that the app sends me a push notification if my soil dries out below a certain threshold.
 
 {% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/blob/main/Multi-Disciplinary/Smart%20Greenhouse/Firmware/Smart%20Greenhouse.ino" text="GitHub" style="primary" size="lg" %}
+
+## Concept Sketches
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307664/portfolio-site/smart-greenhouse/wtsflmfn8y5xlpso36oe.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307657/portfolio-site/smart-greenhouse/z3w4qt83yulnlsqezc9x.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307655/portfolio-site/smart-greenhouse/frr1mxcxgc94fgfffnlz.jpg
+{% endcapture %}
+{% include elements/carousel_2.html %}
 
 ## Reflection
 I really like this project because it has a practical use and will hopefully help my bonsai grow some aerial roots this summer.

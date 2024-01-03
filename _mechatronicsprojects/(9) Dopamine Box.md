@@ -29,6 +29,7 @@ The photoresistor is read constantly and once it detects the lights in the room 
 ## Mechanical Design
 To create the designs on the LED plate I had my sister create some clip art. I then imported the cliparts as sketch images  and from there I carefully traced the designs using primarily splines and straight lines. The trick with this is to only use a two pointed spline per curve. This makes creating complicated lines pretty easy.
 {% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704306782/portfolio-site/dopamine-box/xznmis4lxvxxktd71z6z.jpg
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704210954/portfolio-site/dopamine-box/eyi9frmywcvwn3kwsonn.png
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704210954/portfolio-site/dopamine-box/pzpnt25kxclpivocbs9m.png
 {% endcapture %}
@@ -44,6 +45,13 @@ When a user presses a push button, it simultaneously lights the vertically align
 Once all of the buttons have been pressed at least once and all of the green LEDs have been turned on, the victory animation begins. It starts by shifting an LED off, left to right and then right to left. Next, the RGB briefly flashes between yellow, cyan and magenta. On each colour flash a note is played from the buzzer with one additional note not associated with a flash. The four notes combined make a ‘victorey noise’ which is from pokemon I believe. Once the animation is finished the RGB is left on green to match all of the others.
 
 To reset the box, the user must press the first and third buttons simultaneously.
+
+## Concept Sketches
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704306901/portfolio-site/dopamine-box/p7lv7oro3dwy98n42mek.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704306910/portfolio-site/dopamine-box/rchqvhhwlwxti0pdyfix.jpg
+{% endcapture %}
+{% include elements/carousel_2.html %}
 
 ## Reflection
 While this was not a challenging project, it is easily one of my favourites. I am the type of person who is always trying to adopt new habits and this box has been hands down the most successful method for creating new habits. Before creating this box, all of these tasks were on my dailly list, but I rarely completed them all, now it’s rare that I miss a day on any of them. 

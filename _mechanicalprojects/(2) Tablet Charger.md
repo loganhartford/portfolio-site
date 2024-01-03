@@ -1,12 +1,12 @@
 ---
 name: Tablet Charger
 tools: [SolidWorks, 3D Printing]
-image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704213552/portfolio-site/3d-modelling/tablet-charger/uxfuck9tvnjktuynkchz.jpg
+image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704214606/portfolio-site/3d-modelling/tablet-charger/syb8fljylzag339a46ik.png
 description: 3D printed charging station for my tablet.
 slug: tablet-charger
 ---
 
-# Speaker Mount
+# Tablet Charger
 <p class="post-metadata text-muted">
   August 7th, 2022
 </p>

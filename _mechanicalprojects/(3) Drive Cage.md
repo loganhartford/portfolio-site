@@ -6,7 +6,7 @@ description: Designed a hardrive tower for my Dad.
 slug: drive-tower
 ---
 
-# Speaker Mount
+# Drive Tower
 <p class="post-metadata text-muted">
   May 6th, 2021
 </p>
@@ -16,6 +16,7 @@ My father runs several servers from his house and instead of buying a big expens
 The cage has two towers, each with 8 drives slots and 3x80mm fans mounts. In between the two drive towers, there is a slot for a standard PC power supply (PSU) to slide into with mounting holes to secure it on the front.
 
 {% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307079/portfolio-site/3d-modelling/drive-cage/aozjsqm3qmv5nkh909or.png
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704215399/portfolio-site/3d-modelling/drive-cage/yosffiuq4cxltv7hqqrs.png
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704215399/portfolio-site/3d-modelling/drive-cage/uk2bbtvxdcnwldjexuct.jpg
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704215399/portfolio-site/3d-modelling/drive-cage/cxyl2maarbxxdhwbet0z.png

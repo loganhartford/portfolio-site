@@ -43,6 +43,8 @@ The CAD for this project is simple, but required many test prints and revisions 
 The model slides into the v-slot on the aluminium extrusion on my Ender3 and positions the servo to allow it to flick the switch. To make it easier for the servo to flick the switch and decrease the chance of it getting caught, an extension for the arm was designed. 
 
 {% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307965/portfolio-site/kill-switch/b5ipvdkyhx6ctqmpirgq.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704307971/portfolio-site/kill-switch/iwn34aqme8yaajama2wc.png
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704209178/portfolio-site/kill-switch/bccfjo7aktrxyz7inw4k.png
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704209589/portfolio-site/kill-switch/c3dwypg3wdy6xeg1ljmh.png
 {% endcapture %}

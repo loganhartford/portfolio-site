@@ -21,11 +21,11 @@ This project is the answer to that request.
 
 ## Mechanical Design
 {% capture carousel_images %}
-https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704139494/portfolio-site/beer-can-counter/ufsdgckw6dezozthisdh.jpg
-https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704139896/portfolio-site/beer-can-counter/zdbteimal5ehlf7kdujk.png
-https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704139993/portfolio-site/beer-can-counter/qhszelzhwirkcg08rsh7.png
-https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704139896/portfolio-site/beer-can-counter/praht5mlk6ldhrt79eip.png
-https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704139897/portfolio-site/beer-can-counter/fp03lfhzlwtzn3goefse.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704297112/portfolio-site/beer-can-counter/vlauyfqm8oajjjfeefhg.jpg
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704297113/portfolio-site/beer-can-counter/bmzehfnlw7oburuqsk0p.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704297113/portfolio-site/beer-can-counter/wl1y9wtvz3mhnfy0alqb.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704297115/portfolio-site/beer-can-counter/pkdlm6jjusfwunjo6qmp.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704297113/portfolio-site/beer-can-counter/jyudmgk0cw2qnmhnb91z.png
 {% endcapture %}
 {% include elements/carousel.html %}
 The can collector consists of two parts to make 3D printing feasible.
