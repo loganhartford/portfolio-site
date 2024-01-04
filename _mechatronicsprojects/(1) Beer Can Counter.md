@@ -11,6 +11,14 @@ slug: beer-can-counter
   July 30th, 2022
 </p>
 ***
+{% capture list_items %}
+Mechanical Design
+Hardware Design
+Code
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 Two of my best friends, Jaden and Greg, recently bought a house together. The house came equipped with a man-cave garage, so naturally, that’s where we gravitate to when we hang out there.
 
 Jaden and Greg asked me if I could make something that could count how many beer cans were being crushed by their can crusher.

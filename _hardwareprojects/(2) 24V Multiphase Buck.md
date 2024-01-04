@@ -11,6 +11,16 @@ slug: 24v-multiphase-buck
   September 25th, 2022
 </p>
 ***
+{% capture list_items %}
+Revision 1 - Schematic
+Revision 1 - Layout
+Mistakes and Changes For Revision 2
+Revision 2 - Schematic
+Revision 2 - Layout
+Revision 2 - Results
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 This project was completed for the University of Waterloo Robotics Team’s 2022/23 Mars rover. 
 
 I completed revision one of this project while I was a member of the electrical sub-team. During my time as the electrical sub-team lead, I mentored a new member during his design of the second revision of the board.

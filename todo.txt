@@ -1,10 +1,10 @@
 
 Higher Priority
-- Add buck converter content
 - Add make it stick and learn like a pro notes
 - Add PDB content
 - Add a software section
     - SimpleSchedule
+        - set up a custom domain, update readme
     - CheatScore
 
 Lower Priority:
