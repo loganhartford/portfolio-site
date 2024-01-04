@@ -3,7 +3,8 @@ layout: null
 permalink: /search.json
 ---
 [
-  {% for post in site.posts %}
+  {% assign combined_posts = site.posts | concat: site.books | concat: site.studyguides %}
+  {% for post in combined_posts %}
     {
       "title"    : "{{ post.title | escape }}",
       "category" : "{{ post.category }}",

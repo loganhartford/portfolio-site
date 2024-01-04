@@ -1,7 +1,5 @@
 
 Higher Priority
-- Add video to pcb christmas
-- remove the gay shit
 - Change blog to notes
     - Try and break into sections
         - Books
@@ -10,8 +8,12 @@ Higher Priority
             - Static Websites
 - Add make it stick and learn like a pro notes
 - Add PDB content
+- Add a software section
+    - SimpleSchedule
+    - CheatScore
 
 Lower Priority:
+- Add link to download resume to about page
 - Add more notes pages
     - Book Summaries
     - EE study guides

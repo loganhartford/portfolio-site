@@ -3,7 +3,7 @@ name: Toonie Dispenser
 tools: [SolidWorks, 3D Printing]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704215854/portfolio-site/3d-modelling/toonie-dispenser/zfyyocqyjc5d5lve3bjl.jpg
 description: 3D printed mounts for my desktop speakers
-slug: speaker-mount
+slug: toonie-dispenser
 ---
 
 # Toonie Dispenser

@@ -13,9 +13,8 @@ slug: a-pcb-christmas
 ***
 While on my first internship as a hardware designer, I decided that for Christmas I would showcase my new skills and create a cool gadget for all my friends and family.
 
-Each device was loaded with 3 songs with one song being specific to the recipient.
-
-{% include elements/video.html id="" %}
+Each device was loaded with 3 songs with one song being specific to the recipient. The song being played in the video is Silent Night.
+{% include elements/video.html id="btmIyTIJYW0" %}
 
 ## Hardware Design
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704144983/portfolio-site/pcb-christmas/v9acqo7u55czi3mhwvjf.jpg "Cone holder channel")

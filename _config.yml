@@ -48,8 +48,7 @@ author:
 
 
 ### Posts ###
-permalink: /blog/:title
-
+permalink: /notes/:title
 
 ### Collections ###
 collections:
@@ -69,6 +68,16 @@ collections:
     output: true
     permalink: /projects/:slug
     output: true
+  books:
+    output: true
+    permalink: /notes/:title
+    output: true
+  studyguides:
+    output: true
+    permalink: /notes/:title
+    output: true
+  
+
 
 ### Disqus ###
 disqus:
@@ -114,7 +123,18 @@ defaults:
       type: "posts"
     values:
       comments: false                                   # Set to true to enable disqus comments
-
+  - scope:
+      path: ""
+      type: "books"
+    values:
+      comments: false
+      layout: "post" 
+  - scope:
+      path: ""
+      type: "studyguides"
+    values:
+      comments: false
+      layout: "post" 
 
 ### Exclude from processing ###
 exclude:

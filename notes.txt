@@ -1,0 +1,26 @@
+Add new project category
+
+1. Create new folder in theme
+    - index.html
+        - Update references
+    - project-card.html
+2. Add a defaults section in config
+3. Add a collections section in config
+4. Add an include statement to projects.html
+5. Create a _name folder and add md files
+
+
+
+Add new notes category
+
+1. Create a new folder in theme
+    - disqus.html
+    - index.html
+        - Update referances
+    - post-card.html
+2. Add new category to combined_posts in blog/tags.html
+3. Add new category to combined_posts in search.json
+4. Add a defaults section in config
+5. Add a collections section in config
+6. Add an include statement to blog.html
+7. Create a _name folder and add md files
