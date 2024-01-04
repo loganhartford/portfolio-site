@@ -11,6 +11,14 @@ slug: clapper-lamp
   January 17th, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Code
+Mechanical Design
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 The project is a compromise on my original idea. Originally, the plan was to turn a bedroom light into a ‘clapper’, however there were some issues with this.
 
 In order to avoid running power up the wall and across the ceiling to power the Arduino, I was going to splice the mains power from the light and connect it to an AC to DC adapter and power it that way. 

@@ -11,6 +11,14 @@ slug: rc-airsoft-turret
   February 20th, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Code
+Mechanical Design
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 The goal of this project was simple, to create a robot that would allow me to control and shoot an airsoft gun using a RC remote. 
 
 This project proved to be much more difficult than anticipated. This was the first project I’ve made  that moved and it was my first time working with RC and thus the learning curve was steep to say the least.

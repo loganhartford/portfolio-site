@@ -11,6 +11,15 @@ slug: a-pcb-christmas
   December 25th, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Code
+Mechanical Design
+Concept Sketches
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 While on my first internship as a hardware designer, I decided that for Christmas I would showcase my new skills and create a cool gadget for all my friends and family.
 
 Each device was loaded with 3 songs with one song being specific to the recipient. The song being played in the video is Silent Night.

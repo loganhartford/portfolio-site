@@ -11,6 +11,15 @@ slug: dopamine-box
   December 20th, 2020
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Mechanical Design
+Code
+Concept Sketches
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 The Dopamine Box is an idea I got from YouTuber [Mike Boyd](https://www.youtube.com/watch?v=JJeQIXBdVuk). 
 
 The purpose of the box is to serve as a physical checklist which uses stimulus feedback to positively reinforce completing the tasks. 

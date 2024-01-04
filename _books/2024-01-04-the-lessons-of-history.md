@@ -6,6 +6,9 @@ color:
 description: The celebrated colleciton of essays compiling over 5000 years of history by two of the greatest thinkers of our time.
 ---
 
+## Earth and History
+* > *"When the universe has crushed him man will still be nobler than that which kills him, because he knows that he is dying, and of its victory the universe knows knowthing." - Pascal*
+
 ## Biology and History
 1. Life is competition.
     * We cooperate in out group--out family, community, club, curch, party, "race", or nation--in order to strengthen our group in its competition with other groups.
@@ -27,8 +30,4 @@ description: The celebrated colleciton of essays compiling over 5000 years of hi
 ## Economics and History
 * Concentration of wealth is natural and inevitable, and is periodically aleviated by violent or peaceable partioal redistribution. 
 * In this view all economic history is the slow hearbeat od the social organism, a vast systole and diastole of concentrating wealth and compulsive recirculation.
-
-
-## Quotes
-> *"When the universe has crushed him man will still be nobler than that which kills him, because he knows that he is dying, and of its victory the universe knows knowthing." - Pascal*
 

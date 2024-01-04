@@ -11,6 +11,14 @@ slug: kill-switch
   January 6th, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Code
+Mechanical Design
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 This IOT project was designed as a solution to a problem I had while 3D printing.
 
 When I started prints before work I would ask my sister to turn off my printer when the print was finished because I didn’t like having it sit idle for several hours.

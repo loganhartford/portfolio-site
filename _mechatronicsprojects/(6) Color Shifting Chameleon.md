@@ -11,6 +11,15 @@ slug: color-shifting-chameleon
   February 3rd, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Mechanical Design
+Code
+Concept Sketches
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 This project started with two initial goals. First, to create something cool using only components that I had on hand, and second, to create something that I could give to my little sister as a birthday present.
 
 The idea I landed on was a chameleon mood light, that with the help of an RGB sensor, could change to any colour.

@@ -11,6 +11,14 @@ slug: tic-tac-toe
   April 11th, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Code
+Mechanical Design
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 The objective of this project was to create a physical version of the classic game, Tic Tac Toe. 
 
 The project allows two players to play head to head in a game of tic tac toe. The on-board Arduino is the brains behind the game and automatically detects wins or ties and resets the game board.

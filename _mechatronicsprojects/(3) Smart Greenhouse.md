@@ -11,6 +11,15 @@ slug: smart-greenhouse
   May 5th, 2021
 </p>
 ***
+{% capture list_items %}
+Hardware Design
+Mechanical Design
+Code
+Concept Sketches
+Reflection
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 The inspiration for this project comes from my interest in bonsai. I have a Ficus Retusa bonsai and I want it to sprout aerial roots this summer. In order for this to happen, it needs to be hot an humid.
 
 I created this greenhouse as a way to both monitor and control the temperature and humidity inside the greenhouse.
