@@ -1,11 +1,6 @@
 
 Higher Priority
-- Change blog to notes
-    - Try and break into sections
-        - Books
-        - Study Notes
-        - Cheatsheets
-            - Static Websites
+- Add buck converter content
 - Add make it stick and learn like a pro notes
 - Add PDB content
 - Add a software section

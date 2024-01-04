@@ -1,3 +1,8 @@
+Add new carousel
+1. Duplicate and existing carousel.html in theme repo
+2. ctrl + f "carouselExampleIndicatorsX"
+3. Replace all with "carouselExampleIndicatorsY"
+
 Add new project category
 
 1. Create new folder in theme
