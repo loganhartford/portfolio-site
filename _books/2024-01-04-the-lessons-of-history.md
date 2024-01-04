@@ -2,9 +2,12 @@
 title: The Lessons of History
 tags: [Books, History]
 style: 
-color: 
+color: dark
 description: The celebrated colleciton of essays compiling over 5000 years of history by two of the greatest thinkers of our time.
 ---
+
+<!-- border, fill -->
+<!-- primary, dark -->
 
 ## Earth and History
 * > *"When the universe has crushed him man will still be nobler than that which kills him, because he knows that he is dying, and of its victory the universe knows knowthing." - Pascal*

@@ -80,6 +80,10 @@ collections:
     output: true
     permalink: /notes/:title
     output: true
+  articles:
+    output: true
+    permalink: /notes/:title
+    output: true
   
 
 
@@ -142,6 +146,12 @@ defaults:
   - scope:
       path: ""
       type: "cheatsheets"
+    values:
+      comments: false
+      layout: "post"
+  - scope:
+      path: ""
+      type: "articles"
     values:
       comments: false
       layout: "post" 

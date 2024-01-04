@@ -1,8 +1,8 @@
 ---
 title: Static Websites
 tags: [Cheatsheet, WebDev, Software]
-style: 
-color: 
+style: border
+color: primary
 description: Jekyll, Liquid, WSL, Hosting and CDN
 ---
 

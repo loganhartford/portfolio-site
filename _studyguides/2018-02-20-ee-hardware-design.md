@@ -1,8 +1,8 @@
 ---
 title: EE/Hardware Design
 tags: [Study Guide, Hardware Design, EE]
-style: 
-color: 
+style: fill
+color: secondary
 description: A collection of study notes to prepare for EE/hardware design interviews.
 ---
 
@@ -40,6 +40,7 @@ Microcontrollers
 SPI (Serial Peripheral Interface)
 I2C (Inter-Integrated Circuit)
 PCB Design and Manufacturing Notes
+Load Cell and Wheatstone Bridge Fundamentals
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -380,4 +381,79 @@ I2C is a synchronous serial communication protocol that enables data exchange be
 * **Automated optical inspection (AOI)** inspects PCBs for defects such as missing components, misalignments, and soldering issues.
 * **Vias creation** involves drilling holes in the PCB and electroplating them with a conductive material to establish connections between layers.
 
+## Load Cell and Wheatstone Bridge Fundamentals
+
+#### Strain Gauge
+
+- An electrical sensor that measures strain caused by stress.
+- Consists of a resistive element, such as a wire bonded to a material.
+- As the material deforms, the length and cross-section of the resistive element changes, resulting in a change in resistance.
+- The change in resistance is used to infer a change in force.
+
+#### Wheatstone Bridge
+
+- A typical method for accurately measuring small voltages is to use a Wheatstone bridge.
+- Consists of two voltage dividers wired in parallel with a common voltage source.
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/notes/hardware-design/c4jh0mppdnl9au6qailj "alt text")
+- The supply voltage (Vs) is a constant DC.
+- The output voltage is measured at Vo.
+  - If all the resistances are equal, Vo will be zero.
+  - If one changes, Vo will change.
+
+#### Load Cell
+
+- A load cell consists of strain gauges in a Wheatstone configuration.
+- A load cell with four strain gauges is most common and is called a full bridge.
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/notes/hardware-design/xehuiukcbbfwqegxuxmw "alt text")
+
+#### Load Cell Signal Output
+
+- If a load cell output is 2mV/V and the supply voltage (excitation voltage) is 5V, then at its maximum rated load, Vo will be 10 mV.
+- If the load cell is compression or tension only, the range may be 0-10 mV.
+  - If it works in both, then the range would be -10 mV to 10 mV.
+- Increasing excitation voltage can increase the signal-to-noise ratio, as long as the maximum expected output of the load cell does not exceed the limits of the ADC input.
+
+#### Wire Sense for Load Cells
+
+- Achieving accurate measurements from a load cell requires knowing the precise voltage that is being applied to the load cell.
+- The resistance in the supply and return wires will reduce the voltage. This effect can be significant for long wire runs.
+- Thus, many load cells add two remote sensing wires so the controller can measure the voltage that is actually being applied at the load cell, providing more accurate measurement.
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/notes/hardware-design/y8rzba7nlpxv85zm2fvb "alt text")
+
+##### What is a Full Bridge Bridge
+
+- A bridge is an electrical circuit that connects two nodes by means of a path between them.
+  - Most common is the Wheatstone bridge:
+  ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/notes/hardware-design/rmiv81knfpf5yiuwl3qz "alt text")
+
+##### Bridge Converter
+
+- An electrical circuit that changes DC to AC or vice versa.
+
+##### Half Bridge vs Full Bridge
+
+- A half-bridge converter is a variant of a bridge converter that uses two switches rather than four diodes.
+- A full-bridge converter is a type of bridge converter that uses four switches instead of two.
+
+###### Half Bridge Advantages
+
+- Less EMI.
+- No gaps on magnetic path.
+- Small magnetic cores required.
+
+###### Half Bridge Disadvantages
+
+- Operates at half the supply voltage.
+- Not compatible with current mode control.
+
+###### Advantages of Full Bridge
+
+- More efficient.
+- Operates at full supply voltage.
+
+###### Disadvantages of Full Bridge
+
+- More expensive.
+- Harder to use.
+- Noisy.
 
