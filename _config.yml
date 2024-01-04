@@ -76,6 +76,10 @@ collections:
     output: true
     permalink: /notes/:title
     output: true
+  cheatsheets:
+    output: true
+    permalink: /notes/:title
+    output: true
   
 
 
@@ -134,7 +138,14 @@ defaults:
       type: "studyguides"
     values:
       comments: false
+      layout: "post"
+  - scope:
+      path: ""
+      type: "cheatsheets"
+    values:
+      comments: false
       layout: "post" 
+ 
 
 ### Exclude from processing ###
 exclude:
