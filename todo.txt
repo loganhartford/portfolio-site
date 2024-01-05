@@ -1,6 +1,5 @@
 
 Higher Priority
-- Add make it stick
 - Add PDB content
 - Add a software section
     - SimpleSchedule
