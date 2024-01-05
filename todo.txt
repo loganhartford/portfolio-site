@@ -1,6 +1,6 @@
 
 Higher Priority
-- Add make it stick and learn like a pro notes
+- Add make it stick
 - Add PDB content
 - Add a software section
     - SimpleSchedule
@@ -8,6 +8,7 @@ Higher Priority
     - CheatScore
 
 Lower Priority:
+- Spruce up the homepace (theme > landing.html)
 - Add link to download resume to about page
 - Add more notes pages
     - Book Summaries
