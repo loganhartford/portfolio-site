@@ -70,6 +70,10 @@ collections:
     output: true
     permalink: /projects/:slug
     output: true
+  software:
+    output: true
+    permalink: /projects/:slug
+    output: true
   books:
     output: true
     permalink: /notes/:title
@@ -121,6 +125,11 @@ defaults:
   - scope:
       path: ""
       type: "otherprojects"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "software"
     values:
       layout: "page"
   - scope:                                              # For Documentation Only

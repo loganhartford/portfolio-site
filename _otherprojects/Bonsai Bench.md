@@ -3,7 +3,7 @@ name: Bonsai Bench
 tools: [SolidWorks, Wood-Work]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704218105/portfolio-site/3d-modelling/bonsai-bench/g9ggbpgfjodexgzuqfys.jpg
 description: 3D modelled and then build a plant bench for my bonsai trees.
-slug: Bonsai bench
+slug: bonsai-bench
 ---
 
 # Bonsai Bench
