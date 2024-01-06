@@ -4,7 +4,14 @@ Higher Priority
 - Add a software section
     - SimpleSchedule
         - set up a custom domain, update readme
+        - Re-record video and upload to youtube
+        - See if you can embed youtube in the markdown
+        - Add video to website
     - CheatScore
+        - Re-record video and upload to youtube
+        - See if you can embed youtube in the markdown
+        - Add video to website
+    - Make the skills section in about less gay
 
 Lower Priority:
 - Spruce up the homepace (theme > landing.html)

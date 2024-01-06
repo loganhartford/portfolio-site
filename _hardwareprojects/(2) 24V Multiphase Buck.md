@@ -2,7 +2,7 @@
 name: 24V Multiphase Buck
 tools: [Altium, PDN Analyzer, SaturnPCB]
 image: https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/k99ezly5zne2rbuxq4hk
-description: 48-24V@15A multiphase buck converter.
+description: 48-24V@15A multiphase buck converter for the University of Waterloo Robotics Team's Mars Rover.
 slug: 24v-multiphase-buck
 ---
 
