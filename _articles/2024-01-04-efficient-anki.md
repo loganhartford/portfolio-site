@@ -30,7 +30,7 @@ Summary of articles from [leanAnki.com](https://leananki.com/how-to-use-anki-tut
 - Ignore "Fields…" and "Cards…" for now.
 - Create cards using `CNTR + ENTER` or `CMD + ENTER`.
 - Start with basic card types and expand as needed.
-- Use tags instead of subdecks for card organization:
+- Use tags instead of sub-decks for card organization:
   - Replace spaces with underscores.
   - Add tags during creation or use the deck browser to add tags to multiple cards at once.
 
@@ -41,7 +41,7 @@ Summary of articles from [leanAnki.com](https://leananki.com/how-to-use-anki-tut
 - Tags
 
 #### Studying
-- Press the spacebar to show the next card.
+- Press the space-bar to show the next card.
 
 #### Card Ratings
 - Again: Less than a minute (the card will show up again). Press when you fail to recall the answer.

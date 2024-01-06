@@ -15,7 +15,7 @@ description: The Science of Successful Learning.
 - **Benefits**: Enhances long-term memory and retention.
 
 ##### Reading Notes:
-* Space practice works better since you forget the material a little bit and force your brain to re-sythesize the information.
+* Space practice works better since you forget the material a little bit and force your brain to re-synthesize the information.
 
 #### Retrieval Practice
 - **Concept**: Actively recall information from memory, even if it's challenging.
@@ -48,7 +48,7 @@ description: The Science of Successful Learning.
 
 ##### Reading Notes:
 *  Generative learning is learning that occurs through trial and error. This type of learning produces more nuanced and robust memory and understanding. Generative learning is when the answer is generated rather than recalled.
-* Staring a project without knowing exactly how to do it triggers generative learning which yeilds benefits
+* Staring a project without knowing exactly how to do it triggers generative learning which yields benefits
 
 #### Difficulty and Effort
 - **Concept**: More difficult or effortful forms of learning produce more robust learning.
@@ -56,11 +56,11 @@ description: The Science of Successful Learning.
 
 ##### Reading Notes:
 * Desirable difficulty where through exerted effort, the difficulty can be overcome through effort. 
-* Multiple choice tests are not as effective as short answer tests where you have to pull thfrom your brain
+* Multiple choice tests are not as effective as short answer tests where you have to pull the information from your brain
 * The more effortful or difficult learning is the more likely it is to stick with us long term
 How does repetition relate to learning?
 * Undesirable difficult is a difficulty that cannot be overcome through increased effort.
-* Stucture building is the construction of mental models that connect the things we learn with the things we already know to form deeper and more robust memories.
+* Structure building is the construction of mental models that connect the things we learn with the things we already know to form deeper and more robust memories.
   * Having questions embedded in the text will make poor structure builders as good a good as good structure builders at incorporating the information.
 
 
@@ -83,7 +83,7 @@ How does repetition relate to learning?
 
 ##### Reading Notes:
 
-#### Metacognition
+#### Meta-Cognition
 - **Concept**: Be aware of your learning process and strategies.
 - **Benefits**: Helps adapt and improve learning methods.
 

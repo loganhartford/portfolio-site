@@ -1,5 +1,5 @@
 ---
-title: How to Absorb Textbooks Like a Spongs
+title: How to Absorb Textbooks Like a Sponge
 tags: [Article, L2L]
 style: 
 color:

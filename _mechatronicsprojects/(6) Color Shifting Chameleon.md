@@ -47,11 +47,11 @@ Once the model was 3D printed, a 5mm drill bit was used to make holes for the LE
 {% include elements/button.html link="https://grabcad.com/library/colour-shifting-chameleon-1" text="GrabCAD" style="primary" size="lg" %}
 
 ## Code
-The code for this video can be broken down into two sections, the moodlight section and the RGB sensor section.
+The code for this video can be broken down into two sections, the mood-light section and the RGB sensor section.
 
 So long as the motion sensor is not reading anything, the program will continuously cycle through the RGB rainbow. The program is constantly checking the motion sensor to see if anything has been place in front of it.
 
-Once the motion sensor has been triggered the RGB sensor is read and the data is then processed into a value that can be written to the RGB LEDs. This is done using a gammatable which is did not create. I stole that bit of code from a tutorial I watched on using this colour sensor.
+Once the motion sensor has been triggered the RGB sensor is read and the data is then processed into a value that can be written to the RGB LEDs. This is done using a gamma-table which is did not create. I stole that bit of code from a tutorial I watched on using this colour sensor.
 
 ```c++
 // Motion Sensor Detecting Stuff!

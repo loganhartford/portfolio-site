@@ -52,7 +52,7 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704145903/portfolio-site/pcb
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704147806/portfolio-site/pcb-christmas/mufkk34mn58x5z9xeyk6.png "christmas Tree PCB Layout")
 * 2-layer PCB
 * The board outline was drawn in SolidWorks and then imported as a DXF.
-* Large copper pads used to create ornaments which doubled as testpoints during development.
+* Large copper pads used to create ornaments which doubled as test-points during development.
 * Thick curved lines to the silk-screen layer to create streamers on the Christmas tree
 
 ## Code
@@ -68,9 +68,9 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704308220/portfolio-site/pcb
 
 ##### Playing Songs
 * The pitch of the buzzer is determined by the frequency of the PWM signal being sent to the gate of the MOSFET. 
-* The PWM frequency can be controlled by changing the Prescaler and period of TMR2.
-  * The Prescaler is essentially how fast this timer runs relative to the system clock, and the period is the number cycles before the timer rolls over and changes the state of the PWM signal.
-* Each Prescaler value is only suitable to produce a particular octave range of notes.
+* The PWM frequency can be controlled by changing the pre-scaler and period of TMR2.
+  * The pre-scaler is essentially how fast this timer runs relative to the system clock, and the period is the number cycles before the timer rolls over and changes the state of the PWM signal.
+* Each pre-scaler value is only suitable to produce a particular octave range of notes.
 
 ```c++
 void TMR1_ISR_(void)
@@ -127,6 +127,6 @@ Overall, I would not consider this project a major success. In the end, I ended 
 
 One thing that could have significantly improved the functionality of the code would have been including a capacitor across the switch to low-pass filter the signal. Since I am using this button as an input to an external interrupt peripheral on the controller, I can’t really filter the signal in the software. This resulted in the device occasionally reading multiple presses during a single button press which made it frustrating to use.
 
-The way I stored the song data was also very inefficient. Instead of using one byte to store multiple notes or storing the Prescaler and note in the same byte, I used two bytes for every note. One byte was the note, and the second byte was the corresponding PWM Prescaler. This resulted in my code taking up 90%+ of the 14KB of flash provided by the microcontroller, depending on the code version.
+The way I stored the song data was also very inefficient. Instead of using one byte to store multiple notes or storing the pre-scaler and note in the same byte, I used two bytes for every note. One byte was the note, and the second byte was the corresponding PWM pre-scaler. This resulted in my code taking up 90%+ of the 14KB of flash provided by the microcontroller, depending on the code version.
 
 As I mentioned earlier, I was in an extreme rush to get this project done in time. That is my fault, I started it too close to Christmas. If I were to do this project over again, I would start it months in advance and take some time to think about the most efficient way to store and play the songs on the device. I would also take the time to make the layout a little nicer.

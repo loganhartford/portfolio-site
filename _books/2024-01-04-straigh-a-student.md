@@ -1,5 +1,5 @@
 ---
-title: How to Become a Straigh A Student
+title: How to Become a Straight A Student
 tags: [Books, L2L, Self-Improvement]
 style: 
 color: dark
@@ -13,23 +13,23 @@ description: The Unconventional Strategies Real College Students Use to Score Hi
 * To attain the highest levels of intensity, you need to choose the right time and location to study.
 
 #### Simple Organization
-* Travel around with a peice of paper, divided into your shcedule for the day and reminders
+* Travel around with a piece of paper, divided into your schedule for the day and reminders
     * Use the schedule to guide your activities throughout the day.
     * Jot down any important information that comes up during the day in reminder.
     * At the start of each day, move any scheduled activities that didn't get done today and add all reminders to calendar.
-    * Add activities for the day to you daily schedule with resonable time estimates.
+    * Add activities for the day to you daily schedule with reasonable time estimates.
 
 #### Procrastination Battle Plan
 * Keep a progress journal
     * At the end of each day, record what tasks you didn't get done and why
-    * If all were complted, simply write complete
+    * If all were completed, simply write complete
     * A progress journal will keep you accountable and help you stay motivated.
 * When you have to do something you particularly don't enjoy, make an event out of it.
 * Build a routine
     * Identify protected hours in your schedule and do the same work in these slots each week.
     * Once it becomes a habit, you will no longer have to convince yourself to work during these times.
 * Plan your hard days in advance
-    * Premtively designate days as hard and plan to grind it out.
+    * Preemptively designate days as hard and plan to grind it out.
 
 #### Time Management
 * Have your materials with you at all times and fill in any small patches of time with productive work.
@@ -62,15 +62,15 @@ description: The Unconventional Strategies Real College Students Use to Score Hi
     * Try it again later.
 
 #### Studying
-* Contstruct a Mega-Problem Set:
+* Construct a Mega-Problem Set:
     1. Create a pile for each relevant problem set.
     2. Supplement each problem set with problems from lecture notes.
     3. For each relevant lecture:
-        1. Match the lecture to the problem set that convers the same material.
+        1. Match the lecture to the problem set that covers the same material.
         2. Copy sample problems onto a blank sheet of paper.
         3. Label the sheet of paper with the lecture date/title so you can find the solutions later.
 * Use flashcards for rote memorization.
-    * Spead these sessions out over as much time as possible
+    * Spread these sessions out over as much time as possible
 * Don't organize materials and study in the same day.
 * If you can produce the solution to a problem without making a mistake, then you've learned it.
 * Save practice exams as the final study aid, these should be confidence boosters.
@@ -93,7 +93,7 @@ description: The Unconventional Strategies Real College Students Use to Score Hi
 ## Essays and Papers (Less relevant)
 1. Target a Titillating Topic
 2. Conduct a Thesis Hunting Expedition
-    * Start with general soucrce and then follow references to finde the more targeted sources where good thesis ideas often hide.
+    * Start with general source and then follow references to find the more targeted sources where good thesis ideas often hide.
 3. Seek a Second Opinion
     * A thesis is not a thesis until a professor has approved it.
 4. Research Like a Machine
@@ -108,14 +108,14 @@ description: The Unconventional Strategies Real College Students Use to Score Hi
     * Type supporting quotes from sources directly into your outline.
 6. Consule Your Expert Panel
     * Before starting to write, get some opinions on the organizations of you argument.
-    * The more important the paper the more people shoule review it.
+    * The more important the paper the more people should review it.
 7. Write Without the Agony
     * Follow your outline and articulate your points clearly.
     * Write no more than three to five pages per weekday and five to eight pages per weekend day.
 8. Fix, Don' Fixate
     * Editing only requires 3 passes:
         1. Argument Adjustment Pass: make sure the argument is clear and the flow is good.
-        2. Out Loud Pass: Read outloud and fix any akward passages or unclear explanations.
+        2. Out Loud Pass: Read out loud and fix any awkward passages or unclear explanations.
         3. Sanity Pass: A final pass over a printed version to check the over flow and root out any remaining errors. 
 
 

@@ -101,7 +101,7 @@ The feedback and current sense lines were also routed to the bottom of the board
 #### Schematic
 While working through the datasheet calculations, I forgot to calculate what the IC power dissipation would be in the current set-up. As it turns out, with our dual MOSFET configuration, the IC would be dissipating way too much power. 
 
-During testing, we could power up the IC and get 24V at the output but as soon as any load was applied to the output the IC shut down from overheating. The IC was overheating from supplying too much current to the gates of the MOSFETs during switching. The MOSFETs had very high gate capacitances and were in parrallel so the IC was having to supply 4W of power to switch the FETs. To get some of the testing done, we changed out the frequency resistor and dropped the switching frequency to 100 kHz so the IC wouldn’t overheat.
+During testing, we could power up the IC and get 24V at the output but as soon as any load was applied to the output the IC shut down from overheating. The IC was overheating from supplying too much current to the gates of the MOSFETs during switching. The MOSFETs had very high gate capacitances and were in parallel so the IC was having to supply 4W of power to switch the FETs. To get some of the testing done, we changed out the frequency resistor and dropped the switching frequency to 100 kHz so the IC wouldn’t overheat.
 
 Another issue we found was that the ripple at the output was much too high. This was likely due to selecting high ESR electrolytic caps by mistake as well as because we had to lower the switching frequency to perform the tests.
 
@@ -145,12 +145,12 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-sit
 The main goal of this second revision layout was to make the two channels of the buck as symmetrical as possible while still following all the rules of proper buck converter and high power layout.
 
 ## Revision 2 - Results
-This revision was a signifiacnt improvment on the first. We got rid of the IC overtemp issue and were able to draw a load from the buck without and BOM changes. One major issue is that during layout, Paul and I were referencing the incorrect inductor datasheet while making the footprint so the inductor was far too large for the pad. I had to do some sketchy wiring which certainly negativley impacted the test results.
+This revision was a significant improvement on the first. We got rid of the IC over-temp issue and were able to draw a load from the buck without and BOM changes. One major issue is that during layout, Paul and I were referencing the incorrect inductor datasheet while making the footprint so the inductor was far too large for the pad. I had to do some sketchy wiring which certainly negatively impacted the test results.
 
 *** add image of rev 2 IRL ***
 
-During testing, we were able to draw 8A from the buck before the output would become unstable and shutdown. It appears this was being casued by some runaway interferacne between ripple current of the two channels which cause the IC to go into a fault mode. This issue was not deeply investigated as priorities needed to be shifted to support drive-train testing. 
+During testing, we were able to draw 8A from the buck before the output would become unstable and shutdown. It appears this was being caused by some runaway interference between ripple current of the two channels which cause the IC to go into a fault mode. This issue was not deeply investigated as priorities needed to be shifted to support drive-train testing. 
 
-It was later decided it would be better to modularize the 24V power conversion and avoid the complexities of a multiphase buck conveter. The current plan is to supply the 24V motors with 3 seperate 24V buck converters, each able to supply 10A. In this design, we created the schematic from the datasheet but in this modular version, we decided to make use of WeBench to alleviate some of the design work. This version is currently being worked on by [Muhammad Tanveer](https://www.linkedin.com/in/muhammad-tanveer02/) and as of January 1st, 2024 revision 1 is complete.
+It was later decided it would be better to modularize the 24V power conversion and avoid the complexities of a multiphase buck converter. The current plan is to supply the 24V motors with 3 separate 24V buck converters, each able to supply 10A. In this design, we created the schematic from the datasheet but in this modular version, we decided to make use of WeBench to alleviate some of the design work. This version is currently being worked on by [Muhammad Tanveer](https://www.linkedin.com/in/muhammad-tanveer02/) and as of January 1st, 2024 revision 1 is complete.
 
 I am not intimately involved in this project as I have moved on to more system level leadership, so this report ends here.

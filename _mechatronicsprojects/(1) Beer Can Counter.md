@@ -40,7 +40,7 @@ The can collector consists of two parts to make 3D printing feasible.
 
 {% include elements/button.html link="https://grabcad.com/library/beer-can-counter-1" text="GrabCAD" style="primary" size="lg" %}
 
-Below you can see a channel was cut through the bottom portion of the catcher. This channel is used to route the wires from the laser diode and photoresistor to the back of the model where it is soldered into the harness which runs up to the electrical box. The photoresistor is recessed into the part to minimize the effect of ambient light on its resistance, and to deliver consistent performance in different lighting environments.
+Below you can see a channel was cut through the bottom portion of the catcher. This channel is used to route the wires from the laser diode and photo-resistor to the back of the model where it is soldered into the harness which runs up to the electrical box. The photo-resistor is recessed into the part to minimize the effect of ambient light on its resistance, and to deliver consistent performance in different lighting environments.
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704138960/portfolio-site/beer-can-counter/u9e5wvfdnqsfbtugcbqn.png "Cone holder channel")
 
@@ -50,9 +50,9 @@ Schematic created for reference in Altium.
 
 #### Design Highlights
 * Momentary switches have debouncing capacitors which act as low pass filters on the switch signals
-* There is a cap across the laser photoresistor, to create a low-pass filter on the photoresistor output. The goal of this setup was to be able to generate an external interrupt each time a can intercepts the laser.
-* The laser photoresistor can also be read by an analog pin. This was for tuning the initial setup and finding a resistor that would be suitable to generate a digital signal when the laser beam was broken.
-* The light photoresistor produces an analog signal that is representative of the light level in the room. Its signal is used to determine if the device should be on or off.
+* There is a cap across the laser photo-resistor, to create a low-pass filter on the photo-resistor output. The goal of this setup was to be able to generate an external interrupt each time a can intercepts the laser.
+* The laser photo-resistor can also be read by an analog pin. This was for tuning the initial setup and finding a resistor that would be suitable to generate a digital signal when the laser beam was broken.
+* The light photo-resistor produces an analog signal that is representative of the light level in the room. Its signal is used to determine if the device should be on or off.
 
 ## Code
 C++ running on an Arduino Nano
@@ -95,9 +95,9 @@ void loop() {
   }
 }
 ```
-* Reads photoresistor and determines if lights in the room are ON/OFF
-    * Lowpass filter on photoresistor output
-* Photoresistor output is connected to external interrupt which triggers count
+* Reads photo-resistor and determines if lights in the room are ON/OFF
+    * Low-pass filter on photo-resistor output
+* photo-resistor output is connected to external interrupt which triggers count
 * Count is stored in EEPROM
 * Check to see if number is a funny number
 * User can press reset button to reset the device

@@ -95,7 +95,7 @@ The last two functions run at the end of each turn and check to see if the a pla
 {% include elements/button.html link="https://github.com/loganhartford/Project-Portfolio/blob/main/Multi-Disciplinary/TicTacToe/Firmware/Tic_Tac_Toe.ino" text="GitHub" style="primary" size="lg" %}
 
 ## Mechanical Design
-The enclosure consists of three pieces, the base, the top and the game board.The protoboards snap into the base and then the top is glued on. The 9V battery slides into the cubby on the bottom of the base. The game board fits over the 9 LEDs creating the tic tac toe board and also serves to diffuse the LED’s light making the game state more clear.
+The enclosure consists of three pieces, the base, the top and the game board.The proto-boards snap into the base and then the top is glued on. The 9V battery slides into the cubby on the bottom of the base. The game board fits over the 9 LEDs creating the tic tac toe board and also serves to diffuse the LED’s light making the game state more clear.
 
 {% capture carousel_images %}
 https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704152385/portfolio-site/tic-tac-toe/i5ctfrzy1gqkdosyibaf.png

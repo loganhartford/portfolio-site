@@ -46,11 +46,11 @@ The two objects floating side by side towards the top are some aesthetic extras,
 ## Hardware Design
 The system included 3 Arduino Nano's. one on the tripod which controls rotation, one on the gun which controls firing, lights and tilt and one in the remote.  To allow the Arduinos to communicate with one another I used 3 NRF24l01 Radio modules, one for each Nano.
 
-The Arduino Nano in the remote is wired to two joysticks and two pushbuttons. The left joystick controls tilt, the right one controls rotation. The first button is used to fire the gun and the other toggles the lights on and off.
+The Arduino Nano in the remote is wired to two joysticks and two push-buttons. The left joystick controls tilt, the right one controls rotation. The first button is used to fire the gun and the other toggles the lights on and off.
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1704161588/portfolio-site/airsoft-turret/yt0vzhcsajkkilky4s1c.jpg "Turret hardware")
 
-The Arduino on the tripod is wired to a stepper motor driver which drives the stepper motor as well as some LED’s for underglow. 
+The Arduino on the tripod is wired to a stepper motor driver which drives the stepper motor as well as some LED’s for under-glow. 
 
 Lastly, the Arduino on the gun is wired to a HS-422 servo which controls the tilt of the gun. For the firing mechanism there are 2 SG90 micro servos which pull the trigger. For added effect, this Arduino also controls a 5V laser diode and 3 white LEDs for the laser and flashlight respectively.
 
@@ -113,7 +113,7 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-sit
 {% include elements/carousel_2.html %}
 
 ## Relfection
-This project took me the longest to complete of any of my projects up to this one. As of writing this, this is my favourite and most gratifying project I’ve done. There’s something about controlling an airsoft gun remotely that is just so cool and satisfying.
+This project took me the longest to complete of any of my projects up to this one. As of writing this, this is my favorite and most gratifying project I’ve done. There’s something about controlling an airsoft gun remotely that is just so cool and satisfying.
 
 If I were to do this again I would be a lot more careful in my wiring and soldering. I soldered together a final version of the remote pretty early on in this project and it seemed solid initially. However, as I continued to work more things stopped working and I spent hours and hours testing and trying to figure it out, never even considering the wiring of the remote as a potential point of failure.  The NRF modules are very sensitive to disturbances in their power supply and so some of my poorly spliced wires must’ve been causing them to fail. After I had already tried everything else I could think of to fix this issue, I finally decided to completely rebuild to remote from scratch, this time being much more carefully. After I did this everything started working flawlessly.
 

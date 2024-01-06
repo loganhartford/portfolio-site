@@ -40,7 +40,7 @@ Music tends to slow down learning for most students, particularly in subjects li
 ## How to Overcome Being Stuck
 
 #### Diffuse Mode
-Diffuse mode is when you are not actively thinking about a problem or material, allowing your subconscious to sythesize the information.
+Diffuse mode is when you are not actively thinking about a problem or material, allowing your subconscious to synthesize the information.
 
 #### How to Get into Diffuse Mode
 Engaging in relatively mindless activities is key to entering the diffuse mode of thinking. Activities like brushing your teeth, washing dishes, ironing clothes, walking, riding a bus, taking a shower, or simply lying down with your eyes closed work well. These tasks require minimal focus (just enough to avoid accidents like walking into a wall) but leave your brain free to wander and shift into the diffuse mode.
