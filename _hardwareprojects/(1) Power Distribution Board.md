@@ -34,7 +34,7 @@ The PDB is the most critical custom PCB on the rover. It is responsible for acce
 
 Unfortunately, this is exactly what we had been doing for years. This revision of the PDB is technically the 5th full redesign of the PDB and not a single one of the previous 4 revisions worked well enough to be used in the rover.
 
-** Pile of Broken PDBs **
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/tt7pmbtoyksvbjm0s69a "Bad PDBs")
 
 Having been the electrical lead for a year and overseen two of these failed revisions, I felt personally responsible for the failure to provide the team with a working board. I made it my mission to get a working PSB by the end of summer 2023.
 
@@ -46,7 +46,7 @@ Before starting this new revision, I took some time to think about why all the p
 3. The assembly and testing of the board took forever and were usually completed by someone other than the designer.
 4. The on board buck converters were a consistent point of failure that made the whole board unusable.
 
-** image of the pdb/bms board **
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/q0hbpywrjiidpywzxhpq "Bad PDBs")
 
 #### Architecture Changes
 
@@ -249,11 +249,14 @@ These changes led to a much better result for the second revision. The second re
 By the end of the summer 2023 semester, we had successfully produced the first working revision of the power distribution board. I was a lot of hard work but I am extremely proud of what Rayyan, Melissa and I accomplished thi term. Rayyan and Melissa have also progressed amazingly as hardware designers and I'm sure will be working in the field very soon. In the following semester, Rayyan became co-lead of the electrical sub-team.
 
 {% capture carousel_images %}
-https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/gsqs53rijbxhy2xf2fko
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/cggbbsqosvxkgnhnakx2
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/ihcjywgjddimgxebur91
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/jzzn620yen22a0vj1qrx
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/qyivmlobvwdkhstqarpk
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/ja4rgboxpxxrnytlmk6c
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/zlna7dcqp31ljkjpv1hb
 {% endcapture %}
 {% include elements/carousel_9.html %}
-
-** add pictures of buck modules to carousel **
 
 Before I left for my co-op I created [firmware specifications](https://uwaterloo.atlassian.net/wiki/spaces/UWRT/pages/43621122577/Firmware+Specifications) to guide the development of the PDB firmware. 
 

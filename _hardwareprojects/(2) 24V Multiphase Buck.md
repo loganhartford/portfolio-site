@@ -12,12 +12,12 @@ slug: 24v-multiphase-buck
 </p>
 ***
 {% capture list_items %}
-Revision 1 - Schematic
-Revision 1 - Layout
+Revision 1 Schematic
+Revision 1 Layout
 Mistakes and Changes For Revision 2
-Revision 2 - Schematic
-Revision 2 - Layout
-Revision 2 - Results
+Revision 2 Schematic
+Revision 2 Layout
+Revision 2 Results
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -31,7 +31,7 @@ The Mars rover is powered by a 48V battery however, the motors in the Arm system
 
 Therefore the goal of this project was to be able to step down 48V to 24V and deliver 30 amps at the output, without setting anything on fire.
 
-## Revision 1 - Schematic
+## Revision 1 Schematic
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/o7ndjpai7sfvla5qadfy "Rev1 schematic")
 
 #### Design Constraints and Parameters
@@ -63,7 +63,7 @@ At the output, electrolytic capacitors were chosen due to their availability in 
 
 Two blank pads were added to the design in case additional output capacitance was needed.
 
-## Revision 1 - Layout
+## Revision 1 Layout
 The layout for this design is extremely involved and it took two cycles of design review for me to get something that would work. 
 
 My first layout attempt can be seen in 3D below. This is the only evidence I have of this atrocious layout since it was promptly overwritten.
@@ -118,7 +118,7 @@ Changes for Revision 2:
 * New ceramic output capacitors
 * Make channels of buck symmetric in layout
 
-## Revision 2 - Schematic
+## Revision 2 Schematic
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/utgpuvdfcegjz7ta7sqi "Rev12 buck schematic")
 
 #### Major Changes
@@ -133,7 +133,7 @@ Revision 2 of the 24V Multiphase Buck Converter was completed by [Paul Kokanov](
 
 This was Paul’s first ever board design so it was my responsibility to mentor him through the process. Paul started the design by making the necessary changes, updating the [calculations](https://docs.google.com/spreadsheets/d/1utRPUaGuIHdQyZ6kgZqXWJL_hp_wMtMAAwjf_JoCFgw/edit#gid=848249928) and making BOM changes where necessary.
 
-## Revision 2 - Layout
+## Revision 2 Layout
 The biggest changes to this design occurred in the layout.
 
 {% capture carousel_images %}
@@ -144,10 +144,14 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-sit
 
 The main goal of this second revision layout was to make the two channels of the buck as symmetrical as possible while still following all the rules of proper buck converter and high power layout.
 
-## Revision 2 - Results
+## Revision 2 Results
 This revision was a significant improvement on the first. We got rid of the IC over-temp issue and were able to draw a load from the buck without and BOM changes. One major issue is that during layout, Paul and I were referencing the incorrect inductor datasheet while making the footprint so the inductor was far too large for the pad. I had to do some sketchy wiring which certainly negatively impacted the test results.
 
-*** add image of rev 2 IRL ***
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/fdzt1skw98yt1nyzhmbn
+https://res.cloudinary.com/dlfqn0wvp/image/upload/f_auto,q_auto/v1/portfolio-site/hardware-design/pdb/v5m5jhdyoqcuqczt7sx4
+{% endcapture %}
+{% include elements/carousel_5.html %}
 
 During testing, we were able to draw 8A from the buck before the output would become unstable and shutdown. It appears this was being caused by some runaway interference between ripple current of the two channels which cause the IC to go into a fault mode. This issue was not deeply investigated as priorities needed to be shifted to support drive-train testing. 
 

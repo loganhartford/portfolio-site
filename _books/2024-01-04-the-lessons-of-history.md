@@ -6,8 +6,16 @@ color: dark
 description: The celebrated collection of essays compiling over 5000 years of history by two of the greatest thinkers of our time.
 ---
 
-<!-- border, fill -->
-<!-- primary, dark -->
+{% capture list_items %}
+History and Earth
+Biology and History
+Morals and History
+Religion and History
+Economics and History
+Government and History
+History and War
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
 
 ## History and Earth
 * > *"When the universe has crushed him man will still be nobler than that which kills him, because he knows that he is dying, and of its victory the universe knows nothing." - Pascal*

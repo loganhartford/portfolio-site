@@ -6,6 +6,17 @@ color: dark
 description: The Unconventional Strategies Real College Students Use to Score High While Studying Less
 ---
 
+{% capture list_items %}
+Study Basics
+Quizzes and Exams
+Getting Stuck
+Studying
+Quiz and Recall Method
+Testing Strategies
+Essays and Papers (Less relevant)
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 ## Study Basics
 
 #### Work Intensity

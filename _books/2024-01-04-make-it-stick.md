@@ -6,6 +6,23 @@ color: dark
 description: The Science of Successful Learning.
 ---
 
+{% capture list_items %}
+Key Learning Principles
+Spaced Repetition
+Retrieval Practice
+Interleaving
+Elaboration
+Generation
+Difficulty and Effort
+Reflection
+Mnemonics
+Dual Coding
+Meta-Cognition
+Testing Effect
+Book's Emphasis
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 "Make It Stick" by Peter C. Brown, Henry L. Roediger III, and Mark A. McDaniel explores the science behind effective learning and offers practical strategies for improving memory and retention.
 
 ## Key Learning Principles

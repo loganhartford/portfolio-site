@@ -6,6 +6,20 @@ color: dark
 description: Science based tools to become better at anything.
 ---
 
+{% capture list_items %}
+How to Focus Intently and Beat Procrastination
+How to Overcome Being Stuck
+How to Learn Anything Deeply
+How to Maximize Working Memory--and Take Better Notes
+How to Memorize
+How to Gain Intuition and Think Fast
+How to Exert Self-Discipline Even When You Don't Have Any
+How to Motivate Yourself
+How to Read Effectively
+How to Win Big on Tests
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 ## How to Focus Intently and Beat Procrastination
 
 #### The Pomodoro Technique
