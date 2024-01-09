@@ -87,4 +87,39 @@ You get to wake up early for work, you get to make another sales call for your b
 
 Be empowered by your good choices
 
-###
+#### Rituals
+Associate rituals with our habits to make getting into the correct state of mind easier. For example, putting you headphones on anytime you are working. After a while, you will feel focused just from putting on your headphones.
+
+## The 3rd Law: Make It Easy
+
+### Progress
+Don't worry about optimization at the start, just do the thing you need to do.
+
+#### How Long Does It Take to Build a New Habit?
+A better question is how many? Time does not matter, repetitions do. 
+
+### The Two-Minute Rule
+When you start a new habit it should take less than two minutes to execute.
+* Read before bed -> Read one page.
+* Do thirty minutes of yoga -> Take out my yoga mat.
+* Study for class -> Open my notes.
+* Run three miles -> Tie my running shoes.
+You'll often find that just completing this scaled down version make the full behavior much easier. You can also do this as the whole habit at the start.
+
+#### Writing
+In a writing or journalling practice, it is often best to stop when you feel like you have more to write.
+
+### Automate Your Habits
+Example: plug your wifi router into an outlet time that turns off an hour before bed.
+
+#### One-Time Actions That Lock In Good Habits
+* Buy a good mattress.
+* Buy good shoes to avoid back pain.
+* Unsubscribe from emails.
+* Turn of notifications and mute chats.
+* Set your phone to silent.
+* Use filters to clean you email.
+* Ask service providers for a lower bill.
+* Set up automatic bill pay.
+* Cut cable service.
+* Change the password to your social media accounts and give it to someone until the weekend.
