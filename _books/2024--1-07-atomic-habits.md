@@ -123,3 +123,43 @@ Example: plug your wifi router into an outlet time that turns off an hour before
 * Set up automatic bill pay.
 * Cut cable service.
 * Change the password to your social media accounts and give it to someone until the weekend.
+
+## The 4th Law: Make It Satisfying
+
+### Finance
+Open a savings account for something you want to save up for, and every time you decide not to order uber eats or spend money on a video game, move that amount into the savings account.
+
+### Tacking
+Using physical objects to track your progress can be very satisfying. For example, you have a paper clip in a bowl for every hour of a course you want to complete. Every time you complete an hour you move a paperclip into another bowl. Can also do this with coins and allow yourself to spend the money on something indulgent once you reach your goal.
+
+People who track their habits are more likely to keep them. A study found that people who kept a food log lost twice as much weight as those who did not.
+
+### Failure
+A primary difference between winners and losers is that when winners fail or have a setback, they rebound quickly.
+
+### Accountability
+Creating a contract for a habit you want to stick to and having important people in your life sign is as well as yourself can be a power habit adhesive.
+
+## Advanced Tactics: Go From Good to Great
+
+### Stacking The Odds
+Ask yourself:
+1. What feels like fun to me, but work for others?
+2. What makes me loose track of time?
+3. Where do I get greater returns than the average person?
+
+Everyone one has at least a few areas in which they could be in the top 25% with some effort. It's the combination of multiple of these areas that can make your output rare and valuable.
+
+For Scott Adams, he was a decent cartoonist, reasonably funny, and had experience working in a corporate setting. Any of these attributes alone have little value, but combined, they allowed Scott Adams to create the wildly successful comic Dilbert.
+
+### Motivations
+Really successful people feel the same lack of motivation as everyone else. The difference is that they still finds a way to show up despite the feelings of boredom.
+
+### Review
+At the end of the year, consider counting up how many times you executed on the habits you wanted to build. Figure out:
+1. What went well this year?
+2. What didn't go so well this year?
+3. What did I learn?
+
+### How to Apply These Ideas to Business
+[atomichabits.com/business](atomichabits.com/business)
