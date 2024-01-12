@@ -1,6 +1,6 @@
 ---
 title: Atomic Habits
-tags: [Books, History]
+tags: [Books, Self-Improvement, Habits, Psychology]
 style: 
 color: dark
 description: Tiny changes, remarkable results.
