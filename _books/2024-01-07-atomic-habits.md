@@ -6,6 +6,16 @@ color: dark
 description: Tiny changes, remarkable results.
 ---
 
+{% capture list_items %}
+The Fundamentals
+The 1st Law: Make It Obvious
+The 2nd Law: Make It Attractive
+The 3rd Law: Make It Easy
+The 4th Law: Make It Satisfying
+Advanced Tactics: Go From Good to Great
+{% endcapture %}
+{% include elements/list.html title="Table of Contents" type="toc" %}
+
 ## The Fundamentals
 
 ### Goals Restrict Your Happiness
