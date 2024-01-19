@@ -16,7 +16,7 @@ SimpleSchedule is a website is designed to make it as simple as possible to crea
 ![Demo](https://github.com/loganhartford/simple-schedule/blob/main/demo/video/demo_faster.gif?raw=true)
 
 <div style="display: flex; align-items: center; justify-content: center">
-{% include elements/button.html link="https://main--simple-schedule-maker.netlify.app/" text="Live Website" style="primary" size="lg" %}
+{% include elements/button.html link="https://loganhartford.com/" text="Live Website" style="primary" size="lg" %}
 {% include elements/button.html link="https://github.com/loganhartford/simple-schedule/tree/main" text="GitHub" style="primary" size="lg" %}
 </div>
 
