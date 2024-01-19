@@ -4,6 +4,7 @@ tags: [Books, Self-Improvement, Habits, Psychology]
 style: 
 color: dark
 description: Tiny changes, remarkable results.
+author: James Clear
 ---
 
 {% capture list_items %}

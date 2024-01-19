@@ -4,6 +4,7 @@ tags: [Books, Self-Improvement, Stoicism]
 style: 
 color: dark
 description: Unlock the potential (and the peace) that you know is within you.
+author: Ryan Holiday
 ---
 
 {% capture list_items %}

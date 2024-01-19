@@ -3,7 +3,8 @@ title: Predictably Irrational
 tags: [Books, Psychology]
 style: 
 color: dark
-description: The hidden forces that shape our decisions
+description: The hidden forces that shape our decisions.
+author: Dan Ariely
 ---
 
 {% capture list_items %}
@@ -53,3 +54,14 @@ When something has high expectations, reality is likely to fall short of expecta
 If you go to a nice restaurant that your friends has been telling you for weeks is the best place she's ever eaten, you are less likely to enjoy the meal then if you just showed up without context.
 
 This also why the most over-hyped movies never seem to quite hit the spot when you see them in theaters.
+
+### Sterotypes
+The effect of expectation comes into play with stereotypes and what we believe about ourselves. There are sterotypes which say that Asians are good at math and women are bad. When Asian women were asked math questions, they performed better if they were asked a question about their race before than if they were asked a question about their gender.
+
+In another study, elderly people were timed as they walked down a hall. In the first case, they did not recieve any primers, in the second, they were primed with words like "bingo" and "ancient". The group that was primed walked down the halway more slowly.
+
+## The Power of Price
+Students at the University of Iowa who purchase medication on sale had reported worse health outcomes than those who purchased them full prices. In another experiement, studnet who payed full price for a sprots drink were less fatigued after their workouts that those who payed a reduced price.
+
+## The Cycle of Distrust
+Poeple are naturally distrustful of advertisements now. Participants rated a stero system much more highly and said they would pay more money for it if they read about the stero in a 3rd party brochure than if they had read about it in a brouchure produced by the store. The contents of the brochure were identical but the power of an un-biased opinion was at play.

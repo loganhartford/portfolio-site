@@ -4,6 +4,7 @@ tags: [Books, L2L, Self-Improvement]
 style: 
 color: dark
 description: Science based tools to become better at anything.
+author: Barbara Oakley PhD, Olave Schewe
 ---
 
 {% capture list_items %}
