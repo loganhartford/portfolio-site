@@ -4,6 +4,7 @@ tags: [Books, Self-Improvement, Stoicism]
 style: 
 color: dark
 description: Unlock the potential (and the peace) that you know is within you.
+author: Ryan Holiday
 ---
 
 {% capture list_items %}
@@ -50,7 +51,7 @@ Never stop learning.
 ### Find Confidence, Avoid Ego
 Confidence is the freedom to set your own standards and unshackle yourself from the need to prove yourself. A confident person doesn't fear disagreement and doesn't see an admission of incorrectness as and admission of inferiority.
 
-## Part II: Sprit
+## Part II: Spirit
 
 ### The Domain of the Soul
 We are incapable of see what is essential in the world if we are blind to what's going on inside us.

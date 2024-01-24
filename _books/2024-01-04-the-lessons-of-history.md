@@ -4,6 +4,7 @@ tags: [Books, History]
 style: 
 color: dark
 description: The celebrated collection of essays compiling over 5000 years of history by two of the greatest thinkers of our time.
+author: Will and Ariel Durant
 ---
 
 {% capture list_items %}

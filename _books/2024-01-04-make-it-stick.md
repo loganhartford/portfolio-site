@@ -4,6 +4,7 @@ tags: [Books, L2L, Self-Improvement]
 style: 
 color: dark
 description: The Science of Successful Learning.
+author: Peter C. Brown, Henry L. Roediger III, Mark A. MacDaniel
 ---
 
 {% capture list_items %}

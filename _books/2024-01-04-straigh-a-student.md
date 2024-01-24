@@ -4,6 +4,7 @@ tags: [Books, L2L, Self-Improvement]
 style: 
 color: dark
 description: The Unconventional Strategies Real College Students Use to Score High While Studying Less
+author: Cal Newport
 ---
 
 {% capture list_items %}
