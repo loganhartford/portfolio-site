@@ -62,4 +62,20 @@ When we realize that our perception has been shaped by evolution to achieve evol
 
 In the last 20 000 years, human brains have shrunk 10%. This suggests that the safety of society eases the selective pressures for intelligence, allowing people to survive an procreate today that would otherwise have perished in the ancestral environment.
 
+## Gravity
+Wheeler's delayed choice variation of the double slit experiment involves waiting until the quantum has already based through one or the other slit and then measure and 'decide' which slit it shall have gone through. What we chose after the photon has passed the screen determine what the photon did before. Our decision in the present impacts the unfolding of the past.
+
+This type of phenomenon occurs on cosmic scales as well. When a supermassive black hole sucks in material it emits and astronomical amount of light. If the quasar happens to lie behind a massive galaxy relative to us, then according to Einstein's theory of gravity, the light from the quasar can take two paths because of the bent spacetime from the galaxy. Using a telescope to capture photos, we can choose to measure which path the photon takes. If we choose to measure it's path and we find that it is on path A, that means that for billions of years this photon has been on that exact path because of the choice we made today.
+
+### Information Theory
+Information theory finds that the amount of information or data an area of space can hold is relative to it's 2D area. This suggests that the space we occupy might actually be 2D but we interpret and interact with it as if it were 3D. Reality is therefore, a hologram, an image codded on a distant 2D surface. We have no access to objects in space, we only have access to bits written on a boundary that surrounds space. This theory sounds ridiculous but is widely accepted in theoretical physics.
+
+## Virtuality
+Our perception of the world has been shaped by fitness pay-off functions through evolution. We see 3 dimensions of space and experience 1 dimension of time, not because that is what objective reality looks like, but rather because this is the data format that was conducive to our survival and reproduction. It's possible that other living beings experience reality much differently than we do.
+
+Our perception is influence by the current state of our machine as well. Studied have found that people make shorter estimates of distance when given a sugary drink compared to one with artificial sweeteners. People who are more fit will also make shorter distance estimations. Our perception of distance is relative to our bodies ability to traverse the distance.
+
+## Consciousness
+When you speak with a friend, you have no way of knowing if they are conscious, but you would be wrong to conclude that they are unconscious just because you are not conscious of they're consciousness. Similarly, you would be wrong to conclude that your own unconscious mental processes are not conscious simply because you do not have awareness of them.
+
 # WIP
