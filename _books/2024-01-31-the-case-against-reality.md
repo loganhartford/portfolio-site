@@ -8,7 +8,18 @@ author: Donald Hoffman
 ---
 
 {% capture list_items %}
-
+Mystery
+Split Brain Patients
+Complexity
+Beauty
+Reality
+Sensory
+Gravity
+Information Theory
+Virtuality
+Community
+Consciousness
+Reason
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -75,7 +86,10 @@ Our perception of the world has been shaped by fitness pay-off functions through
 
 Our perception is influence by the current state of our machine as well. Studied have found that people make shorter estimates of distance when given a sugary drink compared to one with artificial sweeteners. People who are more fit will also make shorter distance estimations. Our perception of distance is relative to our bodies ability to traverse the distance.
 
-## Consciousness
+## Community
+
+### Consciousness
 When you speak with a friend, you have no way of knowing if they are conscious, but you would be wrong to conclude that they are unconscious just because you are not conscious of they're consciousness. Similarly, you would be wrong to conclude that your own unconscious mental processes are not conscious simply because you do not have awareness of them.
 
-# WIP
+### Reason
+We best argue for an idea when we already believe it or when we are arguing against another ideas we already disbelieve. We did not evolve the ability to reason to pursue truth, we evolved the ability to reason as a tool of persuasion. As a result, our reasoning is full of biases and heuristics that don't always serve us well.
