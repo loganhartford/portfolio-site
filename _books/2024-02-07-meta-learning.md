@@ -61,15 +61,35 @@ The hidden game is the ability to generalize to unseen data.
 
 ## How to Win at Kaggle
 1. Join a competition early.
+    * Create a baseline.
 2. Read the forums daily.
+    * This will take you 80% of the way there.
+    * It's the only way to keep up with developments.
+    * Make posts about papers you think are relevant to the competition.
 3. Make small improvements every day.
+    * Focus on small teaks that will compound over the course of the competition.
+    * Combine predictions form multiple models and in the hopes their errors are not correlated.
+    * Cross-validation is used in most good Kaggle submissions.
 4. Find a validation split that tracks the leader boards.
+    * If you are doing similar things to others, you should be getting similar results.
+    * If you changes in the leader board are not reflecting local changes, revisit you validation set.
 5. Posts from top Kagglers will get you 80% of the way.
 6. Use research papers, blog posts and creativity for the last 20%.
 7. Ensemble results.
 
 
+## The Best Hardware for Deep Learning
+* A home rig is the most cost effective option.
+    * Preferred set up is a laptop running Ubuntu Desktop and a headless desktop with a GPU running Ubuntu Server.
+        * SSH into the desktops and access notebooks on a local network.
+    * Ubuntu Server seems to be more stable and it's easier to install the CUD and CUDNN libraries.
+
+**What GPU should you get?**
+The biggest (most RAM) you can afford.
+
 ## Side Notes
 * Learn to use your code editor really well.
+* When working with Jupyter Notebooks, get in the habit of using %%timeit to see how long different cells take to execute.
+    * This will give you unexpected insights into the efficiency of your pipeline.
 
 # WIP
