@@ -92,4 +92,40 @@ The biggest (most RAM) you can afford.
 * When working with Jupyter Notebooks, get in the habit of using %%timeit to see how long different cells take to execute.
     * This will give you unexpected insights into the efficiency of your pipeline.
 
+## On Finding a Job
+Try and meet people who can influence hiring decisions where they hangout.
+
+### Credibility
+This is the name of the game in machine learning. You build credibility by being visible online, share your work and be helpful on forums.
+
+## The Party is On Twitter
+Twitter is where the deep learning community hangs out. Twitter is a great way to stay up to day with research and trends.
+* Disable the algorithmic timeline and just use the following timeline.
+* Disable notifications.
+
+## Sharing Your Work
+You should start sharing your work as soon as possible. You are in a unique position at any stage in your learning to be able to communicate concepts well to other people at your stage of understanding. Writing and reflecting also helps you to understand what you are doing on a deeper level.
+
+### What to Focus On
+Speak to your experience. This is one  fot he most valuable things you have to offer as others can see what you did an how as well as how you felt along the way and what results you achieved.
+
+## Find a Mentor
+A good mentor is someone very good at something you care about. A mentor doesn't even need to know you or even be aware that you exist.
+
+### Permissionless Apprenticeship
+[You receive value by giving value first.](https://twitter.com/jackbutcher/status/1261139777061113858?s=20)
+
+Another way to attract the attention of like minded people is to [Learn in Public.](https://www.swyx.io/learn-in-public)
+
+## The Regrets of fast.ai Students
+Not spending enough time doing application. Aim to spend 80% of your time doing and 20% of your time learning content.
+
+# Tap in to the Power of Community
+Start asking question on the fast.ai forums. Overtime, you will start to see the value of these exchanges. [Insights from others.](https://radekosmulski.medium.com/how-to-use-the-power-of-the-community-to-learn-faster-564939882d62)
+
+## Energize
+
+**When and what you eat matters**
+A good way to complete more mental work is to eat less. 
+
 # WIP
