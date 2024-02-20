@@ -8,7 +8,22 @@ author: Radek Osmulski
 ---
 
 {% capture list_items %}
-
+Learning Machine Learning
+Becoming a Developer
+How to Learn
+The Hidden Game of ML
+How to Structure a Machine Learning Project
+How to Win at Kaggle
+The Best Hardware for Deep Learning
+Side Notes
+On Finding a Job
+The Party is On Twitter
+Sharing Your Work
+What to Focus On
+Find a Mentor
+The Regrets of fast.ai Students
+Tap in to the Power of Community
+Energize
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -77,7 +92,6 @@ The hidden game is the ability to generalize to unseen data.
 6. Use research papers, blog posts and creativity for the last 20%.
 7. Ensemble results.
 
-
 ## The Best Hardware for Deep Learning
 * A home rig is the most cost effective option.
     * Preferred set up is a laptop running Ubuntu Desktop and a headless desktop with a GPU running Ubuntu Server.
@@ -86,11 +100,6 @@ The hidden game is the ability to generalize to unseen data.
 
 **What GPU should you get?**
 The biggest (most RAM) you can afford.
-
-## Side Notes
-* Learn to use your code editor really well.
-* When working with Jupyter Notebooks, get in the habit of using %%timeit to see how long different cells take to execute.
-    * This will give you unexpected insights into the efficiency of your pipeline.
 
 ## On Finding a Job
 Try and meet people who can influence hiring decisions where they hangout.
@@ -128,4 +137,7 @@ Start asking question on the fast.ai forums. Overtime, you will start to see the
 **When and what you eat matters**
 A good way to complete more mental work is to eat less. 
 
-# WIP
+## Side Notes
+* Learn to use your code editor really well.
+* When working with Jupyter Notebooks, get in the habit of using %%timeit to see how long different cells take to execute.
+    * This will give you unexpected insights into the efficiency of your pipeline.
