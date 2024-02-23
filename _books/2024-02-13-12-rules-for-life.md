@@ -94,8 +94,45 @@ What is the highest sacrifice that can be made? something intensely personal and
 ### On Making Friends
 Benjamin Franklin once suggested that newcomers to a new neighborhood should ask new neighbors to do them a favor, on the maxim: *He that has once don you a kindness will be more ready to do you another than he whom you yourself have obliged.*
 
+### Wanting
+
+You don't want to be striving or grasping at things in life. When you do, you loose your power and your sovereignty. You can rise above worldly desires by cultivating pure attention.
+
+>*He who contrives defeats his purpose;*
+>*and he who is grasping, loses.*
+>*The sage does not contrive to win,*
+>*and therefore is not defeated;*
+>*he is not grasping, do does not loose.*
+
 ## Rule 8: Tell the truth--or, at least, don't lie
+If you say untrue things to win over peoples favour or to frame the world in a manner that is more suitable to you own desires, then you are not a real person. You are fake. Start by telling the truth, or at least not lying.
+
+If you will not reveal yourself to other, you cannot reveal yourself to yourself. This means that you will suppress who you are and stifle you potential. This is a biological and conceptual truth.
+
+Researchers have found that new genes in the central nervous system turn themselves on when and organism is placed in a new situation. These genes code for the building blocks of the brain. This means a lot of what you could become is still nascent and will not be called forward by stasis. You have to say something, go somewhere, and do things.
+
+Each time you say untrue things, betray yourself or act out a lie, you weaken your character.
+
+### Motherhood
+The inability of a son to thrive is exploited by a mother bent on shielding her child from all disappointment and pain. She play's the martyr, doomed to support her sone, and garners nourishing support from friends. He broods in his basement, imagining himself oppressed. He fantasizes about the havoc he might wreak on the world that rejected him for his cowardice, awkwardness and inability.
+
+### Goals
+Set you ambitions, even if you are uncertain about what they should be. The better ambitions have to do with character and ability rather than status and power. Knowing this, tie a rope to a boulder. Pick up the great stone and heave it in front of you. Watch and observe as you move forward. Articulate your experience as clearly and carefully to yourself and others as you possibly can. In this manner, you will learn to proceed more effectively and efficiently towards you goal. And, while you are doing this, do not lie. Especially to yourself.
+
+### Living with the Truth
+As you continue to live in accordance with the truth, as it reveals itself to you, you will have to accept and deal with the conflicts that mode of Being will generate. If you do so, you will continue to mature and become more responsible in small and large ways. You will ever more closely approach your newer and more wisely formulated goals, and become even wiser in their formulation. You will stop oscillating wildly and walk ever more directly towards the good.
+
 ## Rule 9: Assume the person you are listening to might know something you don't
+
+People think they think, but it's not true. It's most self-criticism that passes for thinking. True thinking is rare--just like true listening. Thinking is listening to yourself. It's difficult. To think you have to be at least two people at the same time. Then you have to let those people disagree. Thinking is an internal dialogue between two or more different views of the world.
+
+When you listen properly to another person, it's as if you are listening to yourself. You are describing how you are responding to the new information they have imparted, what new things it has made appear within you and how it has changed you presuppositions. This has the same effect on them. In this manner, you both move towards somewhere newer and broader and better. You both change as you let your old presuppositions die, as you shed your skins and emerge renewed.
+
+### Dealing with Disagreement
+Next time you find yourself in a dispute try this: Stop the discussion for a moment and institute this rule: "Each person can speak for himself only after he has first restated the ideas and feelings of the previous speaker accurately to the speaker's satisfaction.
+
+By restating the speaker's ideas you can find find value from them and learn from the process of summarizing their view and you will be able to properly hone your position against them. This should lead to an overall, more productive discussion.
+
 ## Rule 10: Be precise in your speech
 ## Rule 11: Do not bother your children when they are skateboarding
 ## Rule 12: Pet a cat when you encounter one on the street
