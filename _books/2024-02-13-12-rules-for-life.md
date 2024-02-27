@@ -134,5 +134,26 @@ Next time you find yourself in a dispute try this: Stop the discussion for a mom
 By restating the speaker's ideas you can find find value from them and learn from the process of summarizing their view and you will be able to properly hone your position against them. This should lead to an overall, more productive discussion.
 
 ## Rule 10: Be precise in your speech
+
+When we don't talk about the problems in our relationships, they become like a dragon then grows when you deny its existence. Eventually the dragon grows so large is rips your house from it's foundation and forces you to deal with it. But the dragon would never have grown to such a size had you had the small conversations required to keep it at bay.
+
+Communication requires admission of terrible emotions and often leads to difficult conversations, but never underestimate the power of sins of omission.
+
+### Marriage
+
+There is little in a marriage that is so little it is not worth fighting about. You are bound to this person by oath, in theory forever. The oath exists so you take it seriously. Do you really want the same petty annoyances tormenting you every single day of your marriage for the decades of its existence?
+
 ## Rule 11: Do not bother your children when they are skateboarding
+
+Any hierarchy creates winners and losers. And
+1. The collective pursuit of any valued goal produces a hierarchy (as some will be better and some worse at the pursuit).
+2. It is the pursuit of goals that in large part lends life it's meaning.
+The price we pay for involvement in things that bring us meaning is the formation of hierarchies and the inevitable difference in outcomes for participants.
+
+### Post-Modern Logic
+Gender is constructed, but and individual who desires gender re-assignment surgery is to be unarguable considered a man trapped inside a woman's body (or vice versa). *The fact that both of these cannot logically be tree, simultaneously, is just ignored* (or rationalized away with another appalling post modern claim: that logic itself--along with the technique of science--is merely part f the patriarchal system.)
+
 ## Rule 12: Pet a cat when you encounter one on the street
+If you pay careful attention, even on a bad day you amy be fortunate enough to find something that reminds your of the absurdity and the beauty of existence.
+
+When you go for a walk and your head is spinning a cat will show up and if you pay attention to it then you get a reminder for just fifteen seconds that the wonder of Being might make up for the ineradicable suffering that accompanies it.
