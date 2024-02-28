@@ -8,7 +8,19 @@ author: Jordan Peterson
 ---
 
 {% capture list_items %}
-
+Rule 1: Stand up straight with your shoulders back
+Rule 2: Treat yourself like someone you are responsible for helping
+Rule 3: Make friends with people who want the best for you
+Rule 4: Compare yourself to who you were yesterday, not to who someone else is today
+Rule 5: Do not let your children do anything that makes you dislike them
+Rule 6: Set your house in perfect order before you criticize the world
+Rule 7: Pursue what is meaningful (not what is expedient)
+Rule 8: Tell the truth--or, at least, don't lie
+Rule 9: Assume the person you are listening to might know something you don't
+Rule 10: Be precise in your speech
+Rule 11: Do not bother your children when they are skateboarding
+Rule 12: Pet a cat when you encounter one on the street
+CODA
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -157,3 +169,14 @@ Gender is constructed, but and individual who desires gender re-assignment surge
 If you pay careful attention, even on a bad day you amy be fortunate enough to find something that reminds your of the absurdity and the beauty of existence.
 
 When you go for a walk and your head is spinning a cat will show up and if you pay attention to it then you get a reminder for just fifteen seconds that the wonder of Being might make up for the ineradicable suffering that accompanies it.
+
+## CODA
+
+### Arguments
+When you find yourself trapped in an emotional, angry and anxious argument, try and separate yourselves briefly. Sit alone, calm down, and ask yourself, *what had we each done to contribute to the situation? However small, however distant...you have each made some error.* Then reunite and tell each other all they ways in which you we wrong.
+
+### Orientation
+Orient yourself properly. Then--and only then--concentrate on the day. Set your sights at the good, the beautiful and the true and then focus pointedly and carefully on the concerns of each moment. Aim continually at Heaven while you work diligently on Earth. Attend fully to the future in the manner, while attending fully to the present. Then you have the best chance of perfecting both.
+
+### Enemies
+What does the bible verse about loving your enemies really mean? It means learn from the success of your enemies; listen to their critiques so that you can glean from their opposition whatever fragment of wisdom you might incorporate to your betterment; adopt as your ambition the creation of a world in which those who work against you see the light and wake up and succeed, so that the better at which you are at aiming can encompass them tool
