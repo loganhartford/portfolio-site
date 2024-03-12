@@ -67,4 +67,20 @@ For an optional technology to be added back into your life, it must:
 ## Spend Time Alone
 Everyone benefits from doses of solitude, and those that avoid this state will suffer more.
 
-Solitude can be banished from even the quietest settings if you allow input from other minds to intrude.
+Solitude can be banished from even the quietest settings if you allow input from other minds to intrude. This can even include the voice from a podcast or the words from a book. However, smartphones are the primary technology that deprives us of solitude. We should strive to spend some time away from our phone each day.
+
+### Walking
+Walking is a fantastic source of solitude. Walks are great for thinking about tough problems or reflecting on some aspect of your life that needs more attention. Going on "gratitude" walks is another good practice which involves just enjoying the good weather and scenery.
+
+On a regular basis, you should go for long walks, preferably somewhere scenic. You'll notice you are happier and more productive when you are walking regularly.
+
+### Journaling
+When confronted with a tough decision, a hard emotion or a surge of inspiration write it down and you will find that often through this process alone you will have gained clarity.
+
+## Don't Click Like
+The like and other engagement mechanisms of social media, give the impression that you are up-keeping social relationships but in reality you are just running on dopamine hits. Instead of liking pictures of your friends baby, would it not be better to call and ask how she's doing?
+
+### Conversation-Centric Communication
+Prioritize high bandwidth forms of communication like phone calls or in-person conversations over low bandwidth forms like comments and likes. One may still use social media app for logistical reasons, gone will be the days of scrolling and sprinkling likes.
+
+If you adopt conversation-centric communication, you'll still likely rely on texting to gather information or to coordinate social events but you'll no longer participate in open-ended text based conversations throughout the day. The socializing that counts is real conversations and text is no-longer a sufficient alternative.
