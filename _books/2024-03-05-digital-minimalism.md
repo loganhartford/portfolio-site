@@ -8,7 +8,12 @@ author: Cal Newport
 ---
 
 {% capture list_items %}
-
+Digital Minimalism
+The Digital Declutter
+Spend Time Alone
+Don't Click Like
+Reclaim Leisure
+Join the Attention Resistance
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -84,3 +89,45 @@ The like and other engagement mechanisms of social media, give the impression th
 Prioritize high bandwidth forms of communication like phone calls or in-person conversations over low bandwidth forms like comments and likes. One may still use social media app for logistical reasons, gone will be the days of scrolling and sprinkling likes.
 
 If you adopt conversation-centric communication, you'll still likely rely on texting to gather information or to coordinate social events but you'll no longer participate in open-ended text based conversations throughout the day. The socializing that counts is real conversations and text is no-longer a sufficient alternative.
+
+### Practice: Consolidate Communication
+* Keep phone on do not disturb by default.
+
+### Practice: Conversation Office Hours
+* Tell your friends and family when you are regularly free for calls.
+* Say, on your commute home from work for instance.
+* People will know they can call you at that time and you won't be busy.
+* Regularly sit at a coffee shop and tell your friends when you will be there. If they are free, they can stop in and visit.
+
+## Reclaim Leisure
+A life well lived requires activities that serve no other purpose than the satisfaction that the activity itself generates.
+
+The mind does not need rest during the waking hours. It is capable of continuous difficult activity.
+
+### Leisure Lessons
+1. Prioritize demanding activity over passive consumption.
+2. Use skills to produce valuable things int he physical world.
+3. Seek activities that require real world, structured social interaction.
+
+**You can't build a billion dollar empire like FaceBook if you are wasting hours every day using a service like FaceBook.**
+* Schedule the time you use for low quality leisure.
+
+### Practice: Leisure Plans
+
+#### Seasonal Leisure Plan
+* Put together three times per year.
+* Contains objective and habits.
+* Deadlines are useful here but leave scheduling details to the weekly plan.
+
+#### Weekly Leisure Plan
+* For each objective in the seasonal leisure plan, figure out what actions you can do during the week to make progress on these objective.
+* Schedule exactly when you will do these things.
+* Keep track of you adherence to this schedule.
+
+## Join the Attention Resistance
+* Use website blockers and apps to control you access to distracting technologies.
+### Practice: Delete Social Media From Your Phone
+
+### Dumb Phones
+* Light Phones: light weight versions of regular smart phones with just the features you need.
+
