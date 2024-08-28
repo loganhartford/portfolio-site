@@ -1,3 +1,7 @@
+Building Locally
+bundle exec jekyll build
+bundle exec jekyll serve
+
 Add new carousel
 1. Duplicate and existing carousel.html in theme repo
 2. ctrl + f "carouselExampleIndicatorsX"
