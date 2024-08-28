@@ -6,7 +6,7 @@ description: A SCARA Pick and Place Robot.
 slug: scara
 ---
 
-# SCARA RRobot AKA G-RACK
+# SCARA Robot
 <p class="post-metadata text-muted">
   April 20th, 2024
 </p>
