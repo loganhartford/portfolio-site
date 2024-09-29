@@ -86,7 +86,7 @@ I implemented the IK function in Python and used CAD to validate that it was ret
 
 What I discovered is that because our initial design had the joint 1 off-center relative to the base, our limit switch positions would not prevent the end effector from colliding with the robot's base in all of the cartesian quadrants. I also realized we had not accounted for the size of the end effector in preventing collisions. To fix the collision problem, I asked the mechanical team to remove the belt drive on link 1 and direct drive it from the concentric center of the base. To account for the end effector, I added in the estimated radius of the end into the simulation and figure out new limit switch angles.
 
-![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1727543582/portfolio-site/grack/IK/sim2_viru3y.jpg "Improved Visualizer")
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1727632211/portfolio-site/grack/IK/sim2_viru3y_kka3w5.jpg "Improved Visualizer")
 
 Another thing I discovered from using the simulator was that when requesting incremental positions, sometimes the links would "jump" from the left hand solution to the right hand solution as they crossed the sign threshold of one of the trigonometric functions. To fix this I need to add in logic which would choose the "best" solution from both of the possible solutions.
 
