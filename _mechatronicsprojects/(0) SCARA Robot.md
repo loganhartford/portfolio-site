@@ -16,13 +16,13 @@ Design Challenge
 The Plan
 Inverse Kinematics
 Stepper Motor Drivers
-CAD
 First Build
-Limit Switch Problem
-Z-Axis Problmem
-Slack Problem
-Joint 1 Re-Design
+Limit Switches
+Z-Axis Problems
+Sag and Mechanical Play
+Additional Features
 Symposium
+Reflection
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
