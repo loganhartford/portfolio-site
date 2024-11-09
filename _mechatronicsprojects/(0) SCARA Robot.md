@@ -70,7 +70,7 @@ In terms of actuators, the three axes of motion would all be driven by stepper m
 
 The system would be supplied by 12V which would power the Nucleo and the motors and then a 5V buck was included to drive the servo motor. The stepper motors would be driven by a 4-motor stepper motor driver shield. We planned to interface with the robot via and buttons and joystick which is captures in the HMI (Human Machine Interface) section in the bottom right.
 
-![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1727539406/portfolio-site/grack/problem_description/fwarch.drawio_2_1_ewewx4.png "FW Architecture")
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1731176367/portfolio-site/grack/grack_arch.drawio_2_1_bqejn1.png "FW Architecture")
 
 
 The firmware architecture was designed to be modular and to have proper separation of concerns. The program flow would be that the main program polled the interface using the HMI HAL and when needed, would send position requests to the controls functional layer which would compute the inverse kinematics (IK) and determine the optimal motor deltas to achieve the requested position. 
