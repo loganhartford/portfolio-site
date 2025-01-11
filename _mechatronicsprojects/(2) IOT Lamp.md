@@ -12,7 +12,12 @@ slug: lamp
 </p>
 ***
 {% capture list_items %}
-
+Functional Demo
+Motivation
+Mechanical Design
+Electrical
+Software
+Reflection
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
