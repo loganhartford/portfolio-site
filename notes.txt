@@ -33,3 +33,5 @@ Add new notes category
 5. Add a collections section in config
 6. Add an include statement to blog.html
 7. Create a _name folder and add md files
+
+dumm change
