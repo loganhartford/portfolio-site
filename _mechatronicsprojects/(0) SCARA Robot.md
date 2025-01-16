@@ -79,7 +79,7 @@ The controls functional layer would then request the motor deltas and desired sp
 
 The HMI HAL ended up functioning more like a functional layer since main.c called it directly and it is also where the state machine lived.
 
-{% include elements/button.html link="https://github.com/loganhartford/me380/tree/main/First/src" text="GitHub" style="primary" size="lg" %}
+{% include elements/button.html link="https://github.com/loganhartford/me380/tree/main/src" text="GitHub" style="primary" size="lg" %}
 
 ## Inverse Kinematics
 While Ethan and Varrun got started on the CAD and Eric was working on the electrical system, I started developing the inverse kinematics algorithms. I wanted to do these completely from scratch to fully understand the problem.
@@ -141,7 +141,7 @@ def motion_request(x, y):
     # ...
 ```
 
-{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/Controls/ik.py" text="Open ik.py" style="primary" size="lg" %}
+{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/Python/ik.py" text="Open ik.py" style="primary" size="lg" %}
 <br>
 
 The code would first check if each solution put the joints into a valid position given the limit switch constraints, if only one solution was valid, the choice was simple. 
@@ -247,7 +247,7 @@ double MoveByAngle(Motor *motor, double angle, double speedRPM)
 }
 ```
 
-{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/First/src/motor_hal.c" text="Open motor_hal.c" style="primary" size="lg" %}
+{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/src/motor_hal.c" text="Open motor_hal.c" style="primary" size="lg" %}
 <br>
 
 The function to control the z-axis motor is separate since it made more sense to control that motor based on the desired linear movement of the rack.
@@ -333,7 +333,7 @@ void StepMotor(void)
 
 ```
 
-{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/First/src/motor_hal.c" text="Open motor_hal.c" style="primary" size="lg" %}
+{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/src/motor_hal.c" text="Open motor_hal.c" style="primary" size="lg" %}
 <br>
 
 When a motor command was called, the gain schedule would be calculated and added to the motor struct. Each time the timer ISR fired, a new timer period would be calculated depending on how far through the desired motion the motor was and then the timer period would be updated.
@@ -493,7 +493,7 @@ void MoveTo(double x, double y, double rpm)
 }
 ```
 
-{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/First/src/controls.c" text="Open controls.c" style="primary" size="lg" %}
+{% include elements/button.html link="https://github.com/loganhartford/me380/blob/main/src/controls.c" text="Open controls.c" style="primary" size="lg" %}
 <br>
 
 All this code does is try and make the motors complete their required motions in the same amount of time, by adjusting the rpms of the motors from the requested speed. 
