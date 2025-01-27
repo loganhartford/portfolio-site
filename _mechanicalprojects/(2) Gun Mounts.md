@@ -14,4 +14,4 @@ slug: gun-mount
 
 Simple 3D printed brackets to display our glorious pellet gun collection.
 
-{% include elements/button.html link="" text="GrabCAD" style="primary" size="lg" %}
+{% include elements/button.html link="https://grabcad.com/library/gun-wall-mounts-1" text="GrabCAD" style="primary" size="lg" %}
