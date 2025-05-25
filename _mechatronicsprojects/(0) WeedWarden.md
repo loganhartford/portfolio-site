@@ -185,7 +185,7 @@ We quickly labelled 100 of these images using [roboflow](https://app.roboflow.co
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748021645/portfolio-site/WeedWarden/Software/CV/val_huyfny.jpg "Outdoor Base Performance")
 
 ### Model Type
-The default type of YOLO model returns the coordinates of a bounding box around identified objects. Since we need to locate the base of the weed in order to remove it, I was not sure how we could use a bounding box to accuratey locate the center. I thought of first training the model to predict a small back around the base, but this seemed silly. Luckily before I wasted too much time, I discovered that YOLO also has 'Pose' versions of their models. The pose models can be trained to predict key points along an object in addition to a bounding box. This was exactly what I was looking for. The pose model I made for labelling can be seen below.
+The default type of YOLO model returns the coordinates of a bounding box around identified objects. Since we need to locate the base of the weed in order to remove it, I was not sure how we could use a bounding box to accurately locate the center. I thought of first training the model to predict a small back around the base, but this seemed silly. Luckily before I wasted too much time, I discovered that YOLO also has 'Pose' versions of their models. The pose models can be trained to predict key points along an object in addition to a bounding box. This was exactly what I was looking for. The pose model I made for labelling can be seen below.
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748103220/portfolio-site/WeedWarden/Software/CV/model_ag8aib.jpg "Pose Model")
 
@@ -201,7 +201,13 @@ While I was busy with the software, the rest of the team was busy working on the
 ### Mechanical
 Eric and Varrun had finished the CAD for the weed removal system and had begun fabrication.
 
-![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748104733/portfolio-site/WeedWarden/Software/CV/cad2_dmnr2i.jpg "Cartesian CAD")
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748186379/portfolio-site/WeedWarden/Mechanical/First%20Removal%20Car/front_jtrgie.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748186379/portfolio-site/WeedWarden/Mechanical/First%20Removal%20Car/back_fzynzr.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748186380/portfolio-site/WeedWarden/Mechanical/First%20Removal%20Car/y-axis_h5gkux.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748186380/portfolio-site/WeedWarden/Mechanical/First%20Removal%20Car/zaxis_jyumeb.png
+{% endcapture %}
+{% include elements/carousel_4.html %}
 
 One thing to note is the bin on the bottom right of the frame. The idea was to have a spade bit mounted inside this bin and then have the coring bit spin and lower itself onto the spade bit to clear out the dirt. This was the simplest possible solution we could come up with the clear the coring bit.
 
@@ -229,9 +235,33 @@ This actually ended up being pretty close what worked on the final robot. I imag
 ## Term 1 Final Design Review - 3 Months In
 By this point the electro-mechanical assembly of the removal system was done.
 
-![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748108233/portfolio-site/WeedWarden/Software/CV/fdr1_k2iyve.jpg "State")
+{% capture carousel_images %}
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748187000/portfolio-site/WeedWarden/Mechanical/Electromechanical%20System/frontassm_m4uguc.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748186999/portfolio-site/WeedWarden/Mechanical/Electromechanical%20System/backassm_vihrhr.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748187000/portfolio-site/WeedWarden/Mechanical/Electromechanical%20System/boards_jxgtpa.png
+https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748187000/portfolio-site/WeedWarden/Mechanical/Electromechanical%20System/schem_yk1qad.png
+{% endcapture %}
+{% include elements/carousel_5.html %}
 
+The Nucleo is able to commutate the stepper motors and position the drill along two axes with 0.1mm precision. The Nucleo can also receive coordinates via UARt from the Pi and will move the end effector ot that location.
 
+{% include elements/video.html id="5beaoe6T68Q" %}
+
+During the design review, the teaching staff gave us some valuable, and some not so valuable feedback about our design. One thing they questioned was the height of the robot, and the validity of our removal method. They were right, the robot was almost ridiculously large, and we hadn't really proven that the removal method could actually remove the 12" taproot of a dandelion. They also recommended we abandon locomotion from the scope but we ignored that.
+
+## Initial Design Review Term 2
+Over the christmas break, progress slowed. Varrun added the camera and LED ring to the assembly, I procured the electrical components of the locomotion system and wrote the driver and functional logic or them.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748188593/portfolio-site/WeedWarden/Mechanical/christmas%20break/IMG_3960_1_zzr2de.png "Camera and Light")
+
+### Motor Control
+The locomotion motors I selected were [high torque DC motors](https://ca.robotshop.com/products/e-s-motor-36d-dc-planetary-gearmotor-w-encoder-24v-23rpm?qd=bd213a3b156f6f37e21d00c80bcbb270). We chose these motors due to their low cost, high power density and simple control scheme. The driver is a [Cytron 20A dual output DC motor driver](https://ca.robotshop.com/products/cytron-20a-6v-30v-dual-dc-motor-driver). 
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748188594/portfolio-site/WeedWarden/Mechanical/christmas%20break/IMG_3987_1_cxdezm.png "Locomotion Driver Development")
+
+To control each motor channel only requires a boolean direction and PWM speed input. I wanted the RPi5 to handle all of the locomotion logic, since it would be the one running the control loops and sensor fusion and would need to generate motor commands. Unfortunately, this was only partially possible. The RPi5 is equipped with a hardware PWM peripheral, but lacks a hardware input capture peripheral. As a result, I needed to use the Nucleo to capture the encoder pulses.
+
+This meant the Nucleo would need to send the encoder ticks to the RPi5 so the RPi5 could compute the wheel odometry. This added an additional element of complexity when trying to architect the project as I needed to be cognizant of creating congestion on the UART bus.
 
 
 ## Development Outline
