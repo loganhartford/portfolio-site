@@ -182,6 +182,8 @@ https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748022209/portfolio-site/Wee
 
 We quickly labelled 100 of these images using [roboflow](https://app.roboflow.com/) and trained a model and got decent performance. As we didn't have a need for an outdoor model anytime soon, we put labelling these images on the back burner and worked on them slowly over course of the project.
 
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748021645/portfolio-site/WeedWarden/Software/CV/val_huyfny.jpg "Outdoor Base Performance")
+
 ### Model Type
 The default type of YOLO model returns the coordinates of a bounding box around identified objects. Since we need to locate the base of the weed in order to remove it, I was not sure how we could use a bounding box to accuratey locate the center. I thought of first training the model to predict a small back around the base, but this seemed silly. Luckily before I wasted too much time, I discovered that YOLO also has 'Pose' versions of their models. The pose models can be trained to predict key points along an object in addition to a bounding box. This was exactly what I was looking for. The pose model I made for labelling can be seen below.
 
@@ -189,10 +191,45 @@ The default type of YOLO model returns the coordinates of a bounding box around 
 
 In addition to a base key point, I added two key points for the stem and one for the flower. I figured this would allow the model to better learn how the points are oriented relative to one another rather than having say, a flower and a base key point independently. The additional key points can also be defaulted to when locating a weed in the case where the base is occluded from the camera by the stem or flower.
 
-![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748103977/portfolio-site/WeedWarden/Software/CV/both_vorpq5.png "Pose Model")
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748103977/portfolio-site/WeedWarden/Software/CV/both_vorpq5.png "Box vs Pose")
 
 One downside of using a pose model is that labelling the images is a lot more labor intensive, as you have to position the key points on every object in addition to the bounding boxes.
 
+## Progress Report #1 - 1.5 Months In
+While I was busy with the software, the rest of the team was busy working on the hardware.
+
+### Mechanical
+Eric and Varrun had finished the CAD for the weed removal system and had begun fabrication.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748104733/portfolio-site/WeedWarden/Software/CV/cad2_dmnr2i.jpg "Cartesian CAD")
+
+One thing to note is the bin on the bottom right of the frame. The idea was to have a spade bit mounted inside this bin and then have the coring bit spin and lower itself onto the spade bit to clear out the dirt. This was the simplest possible solution we could come up with the clear the coring bit.
+
+### Electrical/Firmware
+
+Ethan had been working on prototyping the electrical system for th weed removal robot, and updating the firmware from our [previous project](https://lhartford.com/projects/scara) to work for this new robot.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748104987/portfolio-site/WeedWarden/Software/CV/ee_w6tkcz.png "YZ motor control")
+
+{% include elements/button.html link="https://github.com/daue02/481MotorControl" text="Firmware Repo" style="primary" size="lg" %}
+
+## Software Architecture
+While the robot was being fabricated and assembled. I began working on the software features that would be needed to bring it to life. I focused on building out what would be needed to functionally test the weed removal system. This meant the camera, the computer vision inference and communication with the Nucleo which controlled the cartesian axes.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748106325/portfolio-site/WeedWarden/Software/CV/arch1_pu1jma.jpg "Arch V1")
+
+{% include elements/button.html link="https://github.com/daue02/481MotorControl" text="Software Repo" style="primary" size="lg" %}
+
+This original architecture was a bit convoluted. I had just started using ROS2 so I was guilty of over-using the tools it provided me and made everything I could it's own node. One problem with this is there is some overhead related to process switching and managing individual processes so have a bunch of process that only run sequentially and then sit idly the rest of the time doesn't really make sense. I would figure that out later.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748107864/portfolio-site/WeedWarden/Software/CV/state_diagram.drawio_2_rie57s.png "State")
+
+This actually ended up being pretty close what worked on the final robot. I imaged the robot driving around, checking the camera for dandelions, and then if it found one stopping to accurately locate it. From there it would position the drill over it and then send a command to the Nucleo to carry out the removal procedure and wait until it was done.
+
+## Term 1 Final Design Review - 3 Months In
+By this point the electro-mechanical assembly of the removal system was done.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748108233/portfolio-site/WeedWarden/Software/CV/fdr1_k2iyve.jpg "State")
 
 
 
