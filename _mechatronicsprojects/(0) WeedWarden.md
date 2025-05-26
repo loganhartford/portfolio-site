@@ -311,6 +311,36 @@ This design looked much more refined and professional, making the robot’s func
 
 Despite its polished appearance, the design still presented many engineering challenges.
 
+### Locomotion & Weed Removal System Integration
+Soon after the completion of the CAD, the new removal system was complete and the locomotion system was added.
+
+{% include elements/video.html id="zaWzhWqcslc" %}
+
+The team was in a rush to get the system to me before they left for reading week, so the robot didn't have any tires on the wheels yet.
+### Improving Indoor Computer Vision Performance
+
+To boost model reliability, we needed more indoor data. Moving the system by hand was tedious, so after adding stick-on weather strips to the wheels for grip, I quickly collected 400 images of fake dandelions in various positions.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748283052/portfolio-site/WeedWarden/Mechanical/IMG_4022_1_1_l8hahv.jpg "Indoor Data Collection")
+
+#### Homography Transform
+
+After the vision model predicts a dandelion base, its pixel location must be mapped to the robot's frame for targeting. Since the robot operates on a flat, known surface, a simple homography transform sufficed.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748283628/portfolio-site/WeedWarden/Software/badhomo_1_qg9lns.jpg  "Bad Homography Calibration")
+
+Using [OpenCV's](https://docs.opencv.org/4.x/index.html) `findHomography`, I first tried aligning a ruler to the y-axis and using points along it for calibration. This was inaccurate—errors reached 10mm.
+
+To improve, I designed a 17-point calibration fixture. Using a laser diode on the end effector, I aligned the fixture, then used CAD for ground truth distances and OpenCV to click pixel locations.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748283868/portfolio-site/WeedWarden/Software/ransac_1_ppgiks.jpg  "Good Homography Calibration")
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748284192/portfolio-site/WeedWarden/Software/cims_lfol98.jpg  "Fixture Dimensions")
+
+With these 17 pairs, I used RANSAC to robustly compute the transformation matrix, as more than 4 points require a robust estimator.
+
+* Results!
+
 
 
 * Putting wheels on the new frame
