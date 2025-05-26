@@ -317,8 +317,8 @@ Soon after the completion of the CAD, the new removal system was complete and th
 {% include elements/video.html id="zaWzhWqcslc" %}
 
 The team was in a rush to get the system to me before they left for reading week, so the robot didn't have any tires on the wheels yet.
-### Improving Indoor Computer Vision Performance
 
+### Improving Indoor Computer Vision Performance
 To boost model reliability, we needed more indoor data. Moving the system by hand was tedious, so after adding stick-on weather strips to the wheels for grip, I quickly collected 400 images of fake dandelions in various positions.
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748283052/portfolio-site/WeedWarden/Mechanical/IMG_4022_1_1_l8hahv.jpg "Indoor Data Collection")
@@ -331,25 +331,30 @@ After the vision model predicts a dandelion base, its pixel location must be map
 
 Using [OpenCV's](https://docs.opencv.org/4.x/index.html) `findHomography`, I first tried aligning a ruler to the y-axis and using points along it for calibration. This was inaccurate—errors reached 10mm.
 
-To improve, I designed a 17-point calibration fixture. Using a laser diode on the end effector, I aligned the fixture, then used CAD for ground truth distances and OpenCV to click pixel locations.
-
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748283868/portfolio-site/WeedWarden/Software/ransac_1_ppgiks.jpg  "Good Homography Calibration")
+
+To improve, I designed a 17-point calibration fixture. Using a laser diode on the end effector, I aligned the fixture, then used CAD for ground truth distances and OpenCV to click pixel locations.
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748284192/portfolio-site/WeedWarden/Software/cims_lfol98.jpg  "Fixture Dimensions")
 
-With these 17 pairs, I used RANSAC to robustly compute the transformation matrix, as more than 4 points require a robust estimator.
+With these 17 pairs, I used RANSAC to robustly compute the transformation matrix, as more than 4 points require a robust estimator. The transform matrix generated with this method, had an max error of 0.1mm across the working area.
 
-* Results!
+#### Results
 
+After training new models with and without the additional data and applying the improved homography transform, we evaluated each model on 5 images across 5 dandelion configurations, measuring true base positions.
 
+| Model Description                     | Dist. (mm) | Point Conf. | Box Conf. | Point Type | Num. Boxes |
+|----------------------------------------|------------|-------------|-----------|------------|------------|
+| Original indoor pose model             | **92.52**  | 0.90        | 0.67      | **1.03**   | **2.20**   |
+| Only new indoor data                   | 10.01      | 0.95        | 0.72      | 0.83       | 1.20       |
+| All indoor data                        | **8.27**   | 0.93        | 0.78      | **0.50**   | **1.03**   |
+| Old indoor model retrained on new data | 11.23      | 0.95        | 0.71      | 0.97       | 1.20       |
 
-* Putting wheels on the new frame
-* Collecting more indoor data
-* Developing robust homography
-* 
+The best model achieved 10x better base localization accuracy, more consistent base key point predictions, and fewer false positives compared to the initial model.
 
+## Midterm Design Review - 5.5 Months In
 
-
+{% include elements/video.html id="7L5U28Yua8I" %}
 
 
 
