@@ -259,9 +259,81 @@ The locomotion motors I selected were [high torque DC motors](https://ca.robotsh
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748188594/portfolio-site/WeedWarden/Mechanical/christmas%20break/IMG_3987_1_cxdezm.png "Locomotion Driver Development")
 
-To control each motor channel only requires a boolean direction and PWM speed input. I wanted the RPi5 to handle all of the locomotion logic, since it would be the one running the control loops and sensor fusion and would need to generate motor commands. Unfortunately, this was only partially possible. The RPi5 is equipped with a hardware PWM peripheral, but lacks a hardware input capture peripheral. As a result, I needed to use the Nucleo to capture the encoder pulses.
+To control each motor channel only requires a boolean direction and PWM speed input. I wanted the RPi5 to handle all of the locomotion logic, since it would be the one running the control loops and sensor fusion and would need to generate motor commands. Unfortunately, this was only partially possible. The RPi5 is equipped with a hardware PWM peripheral, but lacks a hardware input capture peripheral. As a result, I needed to use the Nucleo to capture the encoder pulses. This meant the Nucleo would need to send the encoder ticks to the RPi5 so the RPi5 could compute the wheel odometry. This added an additional element of complexity when trying to architect the project as I needed to be cognizant of congestion on the UART bus.
 
-This meant the Nucleo would need to send the encoder ticks to the RPi5 so the RPi5 could compute the wheel odometry. This added an additional element of complexity when trying to architect the project as I needed to be cognizant of creating congestion on the UART bus.
+## Major Autonomy Milestone #1 - Basic Demo
+It was very hard for me to wrap my head around how I was going to make this robot "autonomous". To guide my development and make sure I was working on impactful and high leverage tasks, I came up with a simple first demonstration to work towards. The first demo would entail:
+* The robot "starts" in autonomous mode.
+* Drives forward at a constant velocity.
+* The robot would be taking pictures checking for dandelions.
+* If the robot detected a dandelion, it would stop, and then re-position itself until the y-axis was aligned with the dandelion. 
+* Once aligned, the robot would send the y-axis coordinated to the Nucleo to move the drill over the dandelion.
+
+It was with this demo in mind that the following architecture was made.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748274831/portfolio-site/WeedWarden/Software/archv2_1_bsu9zd.png "Basic Demo Architecture")
+
+**Changes from previous architecture:**
+* More appropriate use of OOP.
+* Converted the camera, homography and CV model nodes into a single class.
+* UART node was changed to a class that could be instantiated by multiple nodes
+* Simplified node logic since they didn't have to request images, inferences or UART comms asynchronously.
+
+### Locomotion Architecture
+The basic composition of the locomotion system is:
+* A **motor control class** for generating PWM outputs and implementing hardware limitations and safeguards.
+* A **controller node** which included a timer which would trigger the control loop.
+* A **localization node** which computes the robot's localization (wheel odometry at this point).
+* A **PID class** which which generates control outputs based on error between set point and current pose estimate.
+
+During the demo, the decision node would request a velocity from the controller. Then if a dandelion was detected, it would request the controller to change the robot's pose in the x-axis. The controller would do this using PID control. The error would be computed between the requested and estimated pose. The estimated pose was computed by the localization node. The controller node would request a pose, which would prompt the localization node to request the encoder ticks from the Nucleo and then update and return the pose estimate to the control node.
+
+### Hardware Progress
+
+#### Frame Re-Design
+In the meantime, Varrun was working on a re-design of the frame to make the robot shorter and more compact. This was following feedback we got in our previous design review, where the teaching staff thought the robot was a bit tall.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748278269/portfolio-site/WeedWarden/Mechanical/framce.drawio_loon2m.png "Frame Re-Design")
+
+The robot's original height was being driven by:
+* The 10cm long hole saw.
+* The 10cm tall spade bit to empty the hole saw, which the bit needed to clear. 
+
+While this was a good method for clearing the bit, it was having too much impact on the rest of the design. We decided to ignore the need to clear the bit, and solve the problem with a more complicated solution if time permitted. If time ran out, we could always just drill out the weed with a regular drill bit and reduce claims about weed "removal".
+
+#### Locomotion
+In parallel, Eric was working designing and building the locomotion system.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748278209/portfolio-site/WeedWarden/Mechanical/locomotions.drawio_ucxw3d.png "Locomotion Design")
+
+The drive train would be front wheel differential drive with two passive wheels at the back which would slide during turns.
+
+#### Electrical
+Ethan was busy planning out the electrical layout of the various board and fabricating and assembling the harnessing between them.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748278179/portfolio-site/WeedWarden/Mechanical/electrical.drawio_at043h.png "Electrical Design")
+
+#### Fully Assembly CAD
+It wasn't long until the CAD for the full system was more or less complete.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748278346/portfolio-site/WeedWarden/Mechanical/full_mimzit.jpg "Full Assembly CAD")
+
+We felt that visually, this was a major improvement over our previous design in terms of design refinement and professional quality. If we said "this robot removes weeds", a non-technical person would have a good idea of how that might work.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748278148/portfolio-site/WeedWarden/Mechanical/CADupdate.drawio_fwauca.png "Full Assembly CAD")
+
+Unfortunately, as pretty as this design was, it was full of interesting problems to solve.
+
+
+
+* Putting wheels on the new frame
+* Collecting more indoor data
+* Developing robust homography
+* 
+
+
+
+
 
 
 ## Development Outline
