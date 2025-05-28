@@ -316,7 +316,7 @@ Soon after the completion of the CAD, the new removal system was complete and th
 
 {% include elements/video.html id="zaWzhWqcslc" %}
 
-The team was in a rush to get the system to me before they left for reading week, so the robot didn't have any tires on the wheels yet.
+The team was in a rush to get the system to me before they left for the long weekend, so the robot didn't have any tires on the wheels yet.
 
 ### Improving Indoor Computer Vision Performance
 To boost model reliability, we needed more indoor data. Moving the system by hand was tedious, so after adding stick-on weather strips to the wheels for grip, I quickly collected 400 images of fake dandelions in various positions.
@@ -337,7 +337,7 @@ To improve, I designed a 17-point calibration fixture. Using a laser diode on th
 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748284192/portfolio-site/WeedWarden/Software/cims_lfol98.jpg  "Fixture Dimensions")
 
-With these 17 pairs, I used RANSAC to robustly compute the transformation matrix, as more than 4 points require a robust estimator. The transform matrix generated with this method, had an max error of 0.1mm across the working area.
+With these 17 pairs, I used RANSAC (RANdom SAmple Consensus) to robustly compute the transformation matrix, as more than 4 points require a robust estimator. The transform matrix generated with this method, had an max error of 0.1mm across the working area.
 
 #### Results
 
@@ -350,22 +350,113 @@ After training new models with and without the additional data and applying the 
 | All indoor data                        | **8.27**   | 0.93        | 0.78      | **0.50**   | **1.03**   |
 | Old indoor model retrained on new data | 11.23      | 0.95        | 0.71      | 0.97       | 1.20       |
 
-The best model achieved 10x better base localization accuracy, more consistent base key point predictions, and fewer false positives compared to the initial model.
+The best model achieved 10x better base localization accuracy, more consistent base key point predictions, and fewer false positives compared to the initial model. Our goal was to be able to target dandelion bases with greater than 12.5mm accuracy, and given that our cartesian system was accurate to 0.1mm, this was promising.
 
 ## Midterm Design Review - 5.5 Months In
+Leading up to the midterm design review, we addressed several reliability issues with the locomotion system—bolts, couplers, and grub screws kept coming loose, causing slack and shaft slipping. Fully resolving these took most of the term. On the software side, odometry accuracy was a challenge due to an incorrect stated gear ratio, which I determined empirically. There were also data typing issues in Pi–Nucleo communication.
 
 {% include elements/video.html id="7L5U28Yua8I" %}
+
+With locomotion mostly stable, I integrated all parallel software features into "autonomous mode" the night before the review. Despite some integration hiccups, I achieved a working milestone by midnight.
+
+### Feedback
+During our design review, the teaching team doubted our drivetrain. They pointed out that grub screws weren't reliable for securing the drive wheels (they were right) and that two fixed passive rear wheels would hinder turning (also correct). We were initially defensive, expecting higher torque motors to solve our issues—but we were wrong.
+
+> Side Note: I accidentally ordered 230RPM motors instead of 23RPM, so the robot moved too fast with little torque. With the correct 23RPM motors, we hoped for better turning, but the drivetrain design was still a problem.
+
+One comment that stood out was, "make sure you don't oversell what you've got here." I was frustrated, feeling we had achieved a lot in a short time, but in hindsight, the advice was partly justified, even if poorly delivered.
+
+## Re-Branding
+
+The feedback about "overselling" stemmed from our focus on autonomous mobility rather than fully eradicating weeds. Dandelions regrow from deep taproots, which our design didn't address. After discussion, we shifted from "weed removal" to "weed control."
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748441533/portfolio-site/WeedWarden/Mechanical/41UXkkha0iL._AC__1_o3oppt.jpg "Weed Spinner")
+
+Instead of removing weeds, our robot would blend up the visible parts nightly using a bit like the one above, suppressing regrowth by depriving the plant of light. This approach is used by [other products](https://tertill.com/) and supported by [research](https://www.tandfonline.com/doi/abs/10.1080/00288233.1967.10426362).
+
+## Re-Design of the Locomotion System
+
+Initially, the team was hesitant to redesign the drivetrain before testing the new high-torque motors. However, I suspected the slippery TPU wheels and dual passive wheels would still cause traction and friction issues, especially given the robot’s weight. To demonstrate this, I ran my own tests.
+
+### caster Wheel Testing
+I attached a caster wheel from Home Depot to the back of the robot and compared its maneuverability to the original setup by driving in an arc. The videos below show the dramatic improvement:
+
+{% include elements/video.html id="dNVoFog3w6w" %}
+{% include elements/video.html id="FsFwFDhB-sk" %}
+
+The caster made turning much easier, proving the need for a new drivetrain. This convinced the team to move forward with a redesign.
+
+{% include elements/video.html id="UNZv2nUFPPE" %}
+
+Finally, some fun driving.
+
+### Developing New Tires
+Since making custom rubber tires seemed daunting, I experimented with silicone, which was readily available.
+
+{% include elements/video.html id="100GDV_8_CU" %}
+
+Key challenges in designing the 3D printed mold included:
+* Optimizing air hole density and size
+* Finding an effective mold release agent
+* Deciding how much to undersize the tire for a snug fit
+
+Stretching the soft silicone helped stiffen the tires. 
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748443177/portfolio-site/WeedWarden/Mechanical/mold_1_fxfrkq.jpg "Weed Spinner")
+
+After successful small-scale tests, I made a full-sized version—the improvement in traction was immediate.
+
+{% include elements/video.html id="YU1iyJ5kySo" %}
+
+Watching the video, you can see the right side of the robot jerks more aggressively as the tire maintains traction while the TPU tire slips out.
+
+### Drivetrain Testing
+
+To choose the best drivetrain, we tested four passive wheel setups:
+1. Original dual fixed wheels
+2. Wide dual fixed wheels (less friction)
+3. Single caster wheel
+4. Dual caster wheels
+
+We ran these tests:
+1. **Zero point turn:** Opposite drive wheels, measure rotation/displacement.
+2. **Arc turn:** Drive in an arc, measure deviation.
+3. **Side hilling:** Max slope before sliding.
+4. **Tipping point:** Force at which wheels lift during drilling.
+5. **Circuit test:** Timed course, note handling.
+
+#### Zero Point Turn – Single Caster
+{% include elements/video.html id="2z3DASWAQAI" %}
+
+#### Arc Turn – Dual Caster
+{% include elements/video.html id="lbXCkQBkh_Q" %}
+
+#### Tipping Point – Thin Passive Wheels (Original)
+{% include elements/video.html id="0JelYa8wTN0" %}
+
+#### Circuit Test – Thin Passive Wheels (Original)
+{% include elements/video.html id="D_K4q7je0Qk" %}
+
+#### Circuit Test – Single Caster Wheel
+{% include elements/video.html id="cjR8pI3jryk" %}
+
+**Summary:**
+- Casters outperformed passive wheels in all driving tests.
+- Single caster was more agile but slightly less stable than 4-wheel setups.
+- Casters struggled with side hilling.
+- Single caster was more maneuverable than dual caster.
+
+We prioritized maneuverability over maximum stability, choosing the single caster. In hindsight, consulting mobile robot research and kinematic models could have saved time.
+
+
 
 
 
 ## Development Outline
-- Building the cartesian system - problems and learnings
-- Re-design of the cartesian system - why?
-- Developing the locomotion system - Control
 - Re-branding/shifting focus - Why? Feedback, decisions
   - Weed control vs weed removal
 - Re-design of the locomotion system
-  - Castor wheel
+  - caster wheel
   - Silicone wheels
 - Developing the autononmy
   - Sensor fusion
