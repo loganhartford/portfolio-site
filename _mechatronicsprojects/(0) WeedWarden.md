@@ -6,7 +6,7 @@ description: A WeedControl robot for residential lawns.
 slug: weedwarden
 ---
 
-# WeedWarden - Full Write up TBD
+# WeedWarden
 <p class="post-metadata text-muted">
   April 24th, 2025
 </p>
