@@ -448,27 +448,87 @@ We ran these tests:
 
 We prioritized maneuverability over maximum stability, choosing the single caster. In hindsight, consulting mobile robot research and kinematic models could have saved time.
 
+## Path Following
+With the locomotion system functional, I implemented path following using a list of waypoints, each with global coordinates and a point type to adapt PID control for different maneuvers (e.g., higher angular gain for turns). However, localization was poor.
 
+{% include elements/video.html id="DmKjdbqPHdc" %}
 
+In the video above, the robot should trace the turf’s edge and return, but it drifts off course. Main issues:
+* Wheel slip, especially during turns (TPU tires, aggressive speed ramp).
+* Poor orientation estimation due to drive system slack—turns were inaccurate, and slack would slip out during forward motion.
 
+Improving controls and switching to silicone tires greatly improved odometry-based path following.
 
-## Development Outline
-- Re-branding/shifting focus - Why? Feedback, decisions
-  - Weed control vs weed removal
-- Re-design of the locomotion system
-  - caster wheel
-  - Silicone wheels
-- Developing the autononmy
-  - Sensor fusion
-  - Path planning
-  - Decision making
-- Final hardware architecture - initial vs final, changes and reasons
-- Final software architecture - intiial vs final, changes and reasons
-- Symposium - snappy pictures, strengths and weaknesses, how it all went
-- What would it take to make this a real product?
-- Reflection - Lesson's learned
-  - What did we do right?
-  - What mistakes did we make?
-    - Simpler locomotion system - odrive with hoverboard motors
-  - What would I do differently?
+{% include elements/video.html id="vPNmT7ouQoc" %}
+
+Despite this, orientation errors persisted.
+
+### Extended Kalman Filter (EKF)
+To address heading drift, I implemented an EKF fusing wheel odometry with the [BNO085](https://www.adafruit.com/product/4754) IMU, which provides robust, drift-compensated orientation via onboard sensor fusion.
+
+The EKF state-space model is shown below:
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748446063/portfolio-site/WeedWarden/Mechanical/image_gy3vb2.png "Kalman Filter 1")
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748446062/portfolio-site/WeedWarden/Mechanical/image-1_qnb1vf.png "Kalman Filter 2")
+
+The process covariance matrix **P** adapts to motion and measurement confidence. BNO085 outputs were transformed to the robot’s frame before fusion. Including the BNO085’s fused orientation in the EKF measurement model significantly improved heading accuracy, especially during slip or sparse encoder updates.
+
+To tune the Q and R matrices, I collected 10 datasets over 5 paths, capturing ground truth with OptiTrack. Offline optimization (BFGS) minimized mean squared error between estimated and ground truth paths. A second round of data collection and tuning further improved localization, yielding strong demo performance.
+
+{% include elements/video.html id="EorPyywkafc" %}
+
+In the video, you can see the robot correcting the orientation error on the straight sections of the path. With the EKF, the robot was able to nearly perfectly trace the turf.
+
+## Updated Software Architecture
+With new features came updates to the software architecture.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748447240/portfolio-site/WeedWarden/Software/archv4.drawio_2_cv2qwv.png "Final Software Architecture")
+
+Key changes:
+- **UART:** Now its own node, handling messages from multiple sources. Nucleo sends encoder ticks every 50ms via hardware timer.
+- **Localization:** Odometry and BNO085 are separate nodes. Odometry updates on encoder tick reception; BNO085 polled every 50ms. ROS2 fused callback combines both in the EKF, posting pose updates for the controller.
+- **Path Planning:** The decision node receives paths from a planner. The controller signals the decision node after each segment, keeping behaviors in sync.
+
+## Final Design Review – 7 Months In
+For the final review, I integrated weed removal logic with path following to demonstrate autonomy. The resulting videos (also shown at the top):
+
+{% include elements/video.html id="LF1d6aeK7RU" %}
+{% include elements/video.html id="RoHv5wQGr44" %}
+
+The teaching staff was highly impressed, calling it one of the best capstone projects they’d seen.
+
+## Symposium Preparation
+To ensure robust live demos at symposium, I refined edge-case behaviors. For example, if the robot stopped too late and missed a dandelion, it would roll back 10cm to double-check.
+
+### Outdoor Model Demo
+To show real-world viability, we labeled all outdoor images and created an interactive demo for the symposium.
+
+{% include elements/video.html id="swU72momobE" %}
+
+Visitors could run live inferences with our outdoor detection model.
+
+### Poster
+My sister [Leandra](https://www.linkedin.com/in/leandra-kelly-b16439263/) designed our symposium poster.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748448645/portfolio-site/WeedWarden/Poster_1_tbepg2.jpg "Symposium Poster Design")
+
+## Symposium Day
+The days before symposium were relaxed—we were well prepared.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1747940277/portfolio-site/WeedWarden/171-IMG_6404_1_fw8x1w.jpg "Team Photo at Symposium")
+
+We ran live demos:
+
+{% include elements/video.html id="llJ_1Cjqqf0" %}
+
+A monitor displayed the latest computer vision inference so visitors could see real-time detection.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1748449187/portfolio-site/WeedWarden/246-IMG_5091_1_1_ikndwa.jpg "Symposium Demo Photo")
+
+Feedback was overwhelmingly positive—many said it was among the best projects they’d seen, especially with live demos.
+
+![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1747940403/portfolio-site/WeedWarden/21-IMG_6842_1_qkzr9c.jpg "Award Photo")
+
+## Reflection
+
 
