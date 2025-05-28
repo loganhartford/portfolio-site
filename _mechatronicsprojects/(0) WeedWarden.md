@@ -12,7 +12,21 @@ slug: weedwarden
 </p>
 ***
 {% capture list_items %}
-
+4th Year Capstone Project
+The Project
+Early Design Ideas
+Early Software Development
+Progress Report #1 - 1.5 Months In
+Software Architecture
+Term 1 Final Design Review - 3 Months In
+Initial Design Review Term 2
+Major Autonomy Milestone #1 – Basic Demo
+Path Following
+Updated Software Architecture
+Final Design Review – 7 Months In
+Symposium Preparation
+Symposium Day
+Reflection
 {% endcapture %}
 {% include elements/list.html title="Table of Contents" type="toc" %}
 
@@ -530,5 +544,9 @@ Feedback was overwhelmingly positive—many said it was among the best projects 
 ![alt text](https://res.cloudinary.com/dlfqn0wvp/image/upload/v1747940403/portfolio-site/WeedWarden/21-IMG_6842_1_qkzr9c.jpg "Award Photo")
 
 ## Reflection
+This is by far the largest project, both in scope and time commitment that I've ever completed. I'm extremely impressed and satisfied with what we accomplished over our final year of university. I think we did an excellent job of showcasing our technical skills.
 
+A lesson that this project taught me was the value of viewing the development through the lense of a product, in this case, a consumer product. We had set out to make something that could have market value, but we didn't want to fixate on it or take it too seriously. I think this was a major mistake. I think had we been more critical of our design decisions from the lens, we would have spotted flaws in our approach much sooner and could have made and even more impressive robot.
+
+I were to design this robot again, I would make it much smaller and more light weight. The robot's original footprint was in part driven by the need to counteract the upward forces generated when extracting a weed. But if we were only blending up the weeds, a much smaller, more agile and more efficient robot could have been possible.
 
