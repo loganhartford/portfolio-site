@@ -1,47 +1,68 @@
-- title: Robotic Electrical System Integration, Tesla Bot | Tesla Inc.
+- title: "Firmware Engineer | Level Home"
+  from: July 2025
+  to: June 2026
+  description:
+    - "Reduced battery-related support tickets by 60% across 225K units using a data-informed estimation algorithm."
+    - "Led firmware for a 50K units/yr embedded Linux networking hub by building a custom i.MX93 Yocto BSP."
+    - "Enabled OTA management of 500 hubs by adding A/B partitions, bootloader logic, and update services."
+    - "Cut factory validation time by 20% by developing a Go test app to exercise hub peripherals over UART."
+    - "Raised battery measurement accuracy by 35% by accounting for usage and stress across the system."
+    - "Trimmed battery health prediction error by 2 weeks using temperature and product-compensated thresholds."
+    - "Boosted critical battery detection accuracy by 10% using internal resistance derived from voltage droop."
+
+- title: "Firmware Engineer | Level Home"
+  from: May 2024
+  to: August 2024
+  description:
+    - "Built a modular factory-test app for an nRF53 smart lock, running 20K units/yr production."
+    - "Reduced NFC polling power by 80% with no added latency using a presence-sensor driver and app logic."
+    - "Cut magnetometer power consumption by 90% by gating door-position polling on accelerometer interrupt."
+    - "Developed an E-ink display driver enabling grayscale and animations by designing custom transition waveforms."
+    - "Quantified unwanted magnetizability across 15 product configs by scripting a fixture-based test protocol."
+
+- title: "Robotic System Integration Engineer, Optimus | Tesla, Inc."
   from: September 2023
   to: December 2023
-  description: 
-    - "Led electrical system integration for AI-driven data collection platforms, developing test protocols to assess operational efficacy and designing harnesses with verified CAN-FD signal integrity."
-    - "Devised a modular repair guide, a comprehensive repair process and a training procedure for technicians for a new generation of robotic hands to boost repair yield from 50% to 95%."
-    - "Reduced triage time during repairs by 75% by implementing software-driven start and end-of-repair checks for robotic hands, employing a Python backend and HTML/JS/CSS frontend for UI efficiency."
+  description:
+    - "Improved hand repair efficacy by 75% by building a Linux/CAN test station with touch-sensor visualization."
+    - "Increased hand repairs from 8 to 50/wk by writing repair & triage procedures and training technicians on them."
+    - "Enabled actuator validation by adding a CAN-command UI and tests that log motor current and speed."
+    - "Reduced repair part usage by 45% by creating a triage procedure ordered by likelihood, risk, and parts scarcity."
+    - "Captured foot-sensor data for locomotion training by integrating a sensor boot into the collection stack."
 
-- title: Cell Manufacturing Engineering, Can Stamping | Tesla, Inc
+- title: "Cell Manufacturing Engineering, Can Stamping | Tesla, Inc."
   from: January 2023
   to: April 2023
-  description: 
-    - "Modeled and fabricated a bracket assembly to accurately position trigger sensors and a reject actuator relative to a CV camera on a high-volume production line, resulting in a 15% improvement in system reliability."
-    - "Developed 3D-printed fixtures for quality control, optimizing tool orientation and increasing part throughput, resulting in a 90% reduction in tooling time and an 85% reduction in part measurement time."
-    - "Created two end-to-end Python applications to automate data collection and aggregation for an equipment troubleshooting guide, a project aimed at reducing equipment downtime."
+  description:
+    - "Streamlined 200+ line-fault workflows by automating fault ranking, owner routing, and HMI updates in Python."
+    - "Enabled QC trend tracking by automating measurement logging and backfilling 400+ historical PDFs in Python."
 
-- title: Robotic Hardware Design & Firmware | EMR Laboratories Inc.
-  from: May 2022
+- title: "Hardware Design & Firmware Engineer | Edge AI Solutions"
+  from: September 2021
   to: December 2022
-  description: 
-    - "Consolidated the electrical footprint of a sewer inspection robot by 60% by integrating a custom Nvidia Jetson baseboard, motor controller, and fiber-to-ethernet converter into a single main-board"
-    - "Continuously refined the main-board and simultaneously developed the firmware to produce the final version of the board (qty. 400), consisting of an 8-layer, dual-sided PCB with MIPI, USB2.0, and Ethernet routing."
-    - "Designed a custom 4S Li-Ion battery management system (BMS) board with firmware and a prototype charger that enhances the user-friendliness of the robot by eliminating the need to remove the batteries for charging."
+  description:
+    - "Shipped 500-unit boom-lift harness alarm, owning PCB and bare-metal PIC firmware for clip-in detection."
+    - "Extended boom-lift alarm battery life from 20 to 128 days using sensor sleep modes and tap-wake firmware."
+    - "Rejected false motion alarms by fusing barometer and accelerometer data in a fixed-point Kalman filter on a PIC."
+    - "Cut board test time from 20 to 2 min/unit across 500 units using a bed-of-nails fixture and UART test firmware."
+    - "Enabled Jetson Nano bring-up by implementing PIC-managed rail sequencing and power-good firmware."
+    - "Cut sewer-robot footprint by 60%, routing GbE and dual MIPI CSI-2 onto one 8-layer impedance-controlled PCB."
+    - "Reverse-engineered undocumented fiber-Ethernet hardware and stood up in-house pick-and-place production."
+    - "Built a PIC16-managed 4S 18650 BMS enabling in-robot charging, charge/discharge control, and fault cutoff."
 
-- title: Consumer Hardware Design & Firmware | EMR Laboratories Inc.
+- title: "Electrical Lead, Team Captain | University of Waterloo Robotics Team"
   from: September 2021
-  to: April 2022
-  description: 
-    - "Developed a low-cost, low-power PCB for production (qty. 1500) of a novel safety device for workers at height. The device detects and raises an alarm if a boom lift operator is not safely tied off during operation."
-    - "Built a functional elevator model to emulate real-life scenarios of the safety device, utilizing Arduinos and radio modules to transmit data to a computer for firmware development and performance evaluation."
-    - "Optimized IC configurations, implemented automatic sleep/wake functionality, and reduced code runtime from 90ms to 16ms to extend device battery life from 20 to 128 days."
-
-- title: Electrical Lead, Team Lead | University of Waterloo Robotics Team
-  from: September 2021
-  to: Present
-  description: 
+  to: January 2024
+  description:
     - "Managed team direction, project coordination, and sub-team integration to ensure seamless functioning of all systems in the Mars Rover Robot in preparation for the University Rover Challenge."
     - "Coordinated and led the electrical team, providing mentorship to novice members throughout their board design process, including assisting with design reviews and assembly and testing using appropriate equipment."
     - "Created and validated two iterations of an 8A output, 48-24V multi-phase buck converter, utilizing high-power layout techniques to ensure adequate power and heat distribution on the board"
 
-- title: BASc Mechanical Engineering, Mechatronics Option | University of Waterloo
+- title: "BASc Mechanical Engineering (Distinction), Mechatronics, Computing & AI Minors | University of Waterloo"
   from: September 2020
-  to: Present
-  description: 
+  to: April 2025
+  description:
+    - "Capstone: WeedWarden autonomous weed-control robot, winner of the Best Prototype Award at the Capstone Symposium"
     - "Intro to Microprocessors and Digital Logic"
     - "Microprocessor Systems and Interfacing"
     - "Circuits I/II"
@@ -50,5 +71,5 @@
     - "Mechanics of Deformable Solids I/II"
     - "Thermodynamics I/II"
     - "Manufacturing Processes"
-    - "Fluid Mechanics I/II" 
+    - "Fluid Mechanics I/II"
     - "Heat Transfer I"
